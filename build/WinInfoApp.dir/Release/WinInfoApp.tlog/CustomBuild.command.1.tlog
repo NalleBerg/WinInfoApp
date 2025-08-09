@@ -1,0 +1,10 @@
+^C:\USERS\NALLE\DOCUMENTS\C++\WORKSPACE\WININFOAPP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nalle/Documents/C++/Workspace/WinInfoApp -BC:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build --check-stamp-file C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

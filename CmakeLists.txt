@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.16)
+project(WinInfoApp LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+
+# Set your Qt6 installation path here
+set(CMAKE_PREFIX_PATH "C:/Qt/6.9.1/msvc2022_64/lib/cmake")
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+
+add_executable(WinInfoApp wininfoapp.cpp)
+
+target_link_libraries(WinInfoApp PRIVATE Qt6::Widgets)
+
+set_target_properties(WinInfoApp PROPERTIES WIN32_EXECUTABLE TRUE)

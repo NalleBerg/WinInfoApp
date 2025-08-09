@@ -1,0 +1,17 @@
+wininfoapp/
+├── CMakeLists.txt
+├── myproject.pro
+├── makeit.bat
+├── src/
+│   └── main.cpp
+├── include/
+│   └── myheader.h
+├── resources/
+│   └── images/
+│   └── icons/
+├── mainwindow.ui  // Or other Qt Designer files
+│
+└── sqlite3/
+    └── sqlite3.dll
+    └── sqlite.interop.dll
+
