@@ -202,6 +202,7 @@ void MainWindow::showAbout() {
         "<h3>WinInfoApp V. %1</h3>"
         "Copyleft 2025 Nalle Berg<br>"
         "<b>License:</b> <a href=\"https://www.gnu.org/licenses/old-licenses/gpl-2.0.html\">GPL V. 2.</a>"
+        "<br><b>Source Code:</b> <a href=\"https://github.com/NalleBerg/WinInfoApp\">GitHub Repository</a>"
     ).arg(versionnumber));
     vbox->addWidget(infoBrowser);
 

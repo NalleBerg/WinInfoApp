@@ -12,7 +12,7 @@ set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
-add_executable(WinInfoApp wininfoapp.cpp)
+add_executable(WinInfoApp [wininfoapp.cpp](http://_vscodecontentref_/3) [appicon.rc](http://_vscodecontentref_/4) resources.qrc)
 
 target_link_libraries(WinInfoApp PRIVATE Qt6::Widgets)
 
