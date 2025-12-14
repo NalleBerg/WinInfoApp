@@ -1,1 +1,6 @@
+#include "include/resource.h"
+
 IDI_ICON1 ICON "wininfoapp.ico"
+IDB_PNG1  RCDATA "wininfoapp.png"
+
+1 RT_MANIFEST "wininfoapp.exe.manifest"

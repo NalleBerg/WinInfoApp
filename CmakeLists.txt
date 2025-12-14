@@ -3,17 +3,16 @@ project(WinInfoApp LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Set your Qt6 installation path here
-set(CMAKE_PREFIX_PATH "C:/Qt/6.9.1/msvc2022_64/lib/cmake")
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_AUTORCC ON)
+add_executable(WinInfoApp
+    wininfoapp.cpp
+    cpuinfo.cpp
+    appicon.rc
+)
 
-find_package(Qt6 REQUIRED COMPONENTS Widgets)
+add_definitions(-DUNICODE -D_UNICODE)
 
-add_executable(WinInfoApp [wininfoapp.cpp](http://_vscodecontentref_/3) [appicon.rc](http://_vscodecontentref_/4) resources.qrc)
-
-target_link_libraries(WinInfoApp PRIVATE Qt6::Widgets)
-
+# Link to Windows libraries if needed (user32, gdi32, etc.)
+target_link_libraries(WinInfoApp PRIVATE user32 gdi32)
 set_target_properties(WinInfoApp PROPERTIES WIN32_EXECUTABLE TRUE)

@@ -1,3 +1,0 @@
-C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/WinInfoApp.dir
-C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/ZERO_CHECK.dir

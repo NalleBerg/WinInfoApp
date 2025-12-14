@@ -1,20 +1,20 @@
 @echo off
 setlocal
 
-REM === User-configurable paths ===
-set "QT_BIN=C:\Qt\6.9.1\msvc2022_64\bin"
 set "CMAKE_GEN=Visual Studio 17 2022"
 set "BUILD_TYPE=Release"
 
-REM === Optional: allow build type as argument ===
 if not "%1"=="" (
     set "BUILD_TYPE=%1"
 )
 
 cls
 
-REM Remove old build directory
-rmdir /s /q build
+REM Forcefully remove old build directory (including all contents)
+if exist build (
+    attrib -r -s -h build\*.* /s
+    rmdir /s /q build
+)
 
 REM Configure the project for Visual Studio x64
 cmake -S . -B build -G "%CMAKE_GEN%" -A x64
@@ -30,25 +30,24 @@ if errorlevel 1 (
     exit /b 1
 )
 
-REM Deploy Qt dependencies
-"%QT_BIN%\windeployqt.exe" .\build\%BUILD_TYPE%\wininfoapp.exe
-if errorlevel 1 (
-    echo [ERROR] windeployqt failed.
+REM Rename build\Release to build\wininfoapp if it exists
+if exist build\Release (
+    ren build\Release wininfoapp
+)
+
+REM Run the app from the new folder
+if exist build\wininfoapp\WinInfoApp.exe (
+    .\build\wininfoapp\WinInfoApp.exe
+    if errorlevel 1 (
+        echo [ERROR] Application failed to start.
+        exit /b 1
+    )
+) else (
+    echo [ERROR] Executable not found in build\wininfoapp.
     exit /b 1
 )
 
-REM Rename the build directory
-ren .\build\%BUILD_TYPE% wininfoapp
-if errorlevel 1 (
-    echo [ERROR] Rename failed.
-    exit /b 1
-)
 
-REM Run the app
-.\build\wininfoapp\wininfoapp.exe
-if errorlevel 1 (
-    echo [ERROR] Application failed to start.
-    exit /b 1
-)
-
+REM Copy .\wininfoapp.ico .\build\wininfoapp\wininfoapp.ico
+REM Copy .\wininfoapp.png .\build\wininfoapp\wininfoapp.png
 endlocal

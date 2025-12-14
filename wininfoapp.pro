@@ -16,6 +16,9 @@ RESOURCES += # Add your .qrc file here if you use Qt resources
 # Application icon (Windows)
 RC_FILE = appicon.rc
 
+CONFIG += windows
+
+
 # Uncomment and configure SQLite if needed
 # DEFINES += USE_SQLITE
 # win32:LIBS += -lsqlite3
@@ -30,3 +33,5 @@ DESTDIR = build
 
 # Target name
 TARGET = wininfoapp
+
+RC_FILE = [appicon.rc](http://_vscodecontentref_/1)
