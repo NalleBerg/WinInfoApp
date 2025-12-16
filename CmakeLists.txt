@@ -8,11 +8,13 @@ set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 add_executable(WinInfoApp
     wininfoapp.cpp
     cpuinfo.cpp
+    storagepage.cpp
+    cpuinfopage.cpp
     appicon.rc
 )
 
 add_definitions(-DUNICODE -D_UNICODE)
 
 # Link to Windows libraries if needed (user32, gdi32, etc.)
-target_link_libraries(WinInfoApp PRIVATE user32 gdi32)
+target_link_libraries(WinInfoApp PRIVATE user32 gdi32 gdiplus comctl32 shell32)
 set_target_properties(WinInfoApp PROPERTIES WIN32_EXECUTABLE TRUE)

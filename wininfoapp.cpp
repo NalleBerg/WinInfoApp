@@ -9,12 +9,54 @@
 #include <string>
 #include <sstream>
 #include <iomanip>
+#include <algorithm>
+#include <windows.h>
 
 #include "include/cpuinfo.h"
 #include "include/resource.h"
 
 using namespace Gdiplus;
 
+
+// Language IDs
+#define ID_LANG_EN 4001
+#define ID_LANG_NO 4002
+
+// Current language (0=en,1=no)
+static int g_currentLanguage = 0;
+
+// --- Utility: INI path & persistence ---
+static std::wstring GetIniPath() {
+    wchar_t buf[MAX_PATH] = {0};
+    if (GetEnvironmentVariableW(L"USERPROFILE", buf, MAX_PATH) > 0) {
+        std::wstring p(buf);
+        if (!p.empty() && p.back() != L'\\' && p.back() != L'/') p += L"\\";
+        p += L"WinInfoApp.ini";
+        return p;
+    }
+    wchar_t cwd[MAX_PATH] = {0};
+    if (GetCurrentDirectoryW(MAX_PATH, cwd) > 0) {
+        std::wstring p(cwd);
+        if (!p.empty() && p.back() != L'\\' && p.back() != L'/') p += L"\\";
+        p += L"WinInfoApp.ini";
+        return p;
+    }
+    return std::wstring(L"WinInfoApp.ini");
+}
+
+static int ReadLanguageSetting() {
+    std::wstring ini = GetIniPath();
+    wchar_t buf[64] = {};
+    GetPrivateProfileStringW(L"Settings", L"Language", L"en-GB", buf, (DWORD)std::size(buf), ini.c_str());
+    if (wcscmp(buf, L"nb-NO") == 0 || wcscmp(buf, L"nb") == 0) return 1;
+    return 0;
+}
+
+static void WriteLanguageSetting(int lang) {
+    std::wstring ini = GetIniPath();
+    const wchar_t* val = (lang == 1) ? L"nb-NO" : L"en-GB";
+    WritePrivateProfileStringW(L"Settings", L"Language", val, ini.c_str());
+}
 
 // --- Global variables ---
 static HFONT hFontLabel = nullptr, hFontValue = nullptr;
@@ -177,8 +219,8 @@ void ResizeWindowToFitContent(HWND hwnd, const HWND* controls, int count) {
     int contentW = bounds.right - bounds.left + ScaleByDPI(32, dpi); // add margin
     int contentH = bounds.bottom - bounds.top + ScaleByDPI(32, dpi);
 
-    int winW = min(max(contentW, minW), maxW);
-    int winH = min(max(contentH, minH), maxH);
+    int winW = std::min(std::max(contentW, minW), maxW);
+    int winH = std::min(std::max(contentH, minH), maxH);
 
     // Add scrollbars if needed
     LONG_PTR style = GetWindowLongPtr(hwnd, GWL_STYLE);
@@ -248,7 +290,7 @@ const wchar_t* MENU_TEXT_ABOUT   = L"About";
 HICON LoadAppIcon(int size = 32) {
     HICON hIcon = (HICON)LoadImageW(GetModuleHandle(NULL), MAKEINTRESOURCEW(IDI_ICON1), IMAGE_ICON, size, size, LR_DEFAULTCOLOR);
     if (!hIcon) {
-        hIcon = LoadIconW(NULL, MAKEINTRESOURCEW(IDI_APPLICATION));
+        hIcon = (HICON)LoadImageW(NULL, IDI_APPLICATION, IMAGE_ICON, size, size, LR_SHARED);
     }
     return hIcon;
 }
@@ -514,21 +556,39 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         HMENU hMainMenu = CreateMenu();
         HMENU hHelpMenu = CreateMenu();
 
-        hSummaryIcon = LoadIconW(NULL, MAKEINTRESOURCEW(IDI_INFORMATION));
-        hCpuIcon = LoadIconW(NULL, MAKEINTRESOURCEW(IDI_SHIELD));
-        hExitIcon = LoadIconW(NULL, MAKEINTRESOURCEW(IDI_ERROR));
+        hSummaryIcon = (HICON)LoadImageW(NULL, IDI_INFORMATION, IMAGE_ICON, 32, 32, LR_SHARED);
+        hCpuIcon = (HICON)LoadImageW(NULL, IDI_SHIELD, IMAGE_ICON, 32, 32, LR_SHARED);
+        hExitIcon = (HICON)LoadImageW(NULL, IDI_ERROR, IMAGE_ICON, 32, 32, LR_SHARED);
         hAboutIconImg = LoadAppIcon(70);
         hAboutBitmap = LoadAboutImage();
+
+        // Read persisted language early so labels are localized
+        g_currentLanguage = ReadLanguageSetting();
+
+        const wchar_t* lblSummary = g_currentLanguage ? L"Oppsummering" : L"Summary";
+        const wchar_t* lblCpu = g_currentLanguage ? L"CPU-informasjon" : L"CPU Info";
+        const wchar_t* lblStorage = g_currentLanguage ? L"Lagring" : L"Storage";
+        const wchar_t* lblExit = g_currentLanguage ? L"Avslutt" : L"Exit";
+        const wchar_t* lblHelp = g_currentLanguage ? L"Hjelp" : L"Help";
+        const wchar_t* lblMenuTop = g_currentLanguage ? L"Meny" : L"Menu";
+        const wchar_t* lblAbout = g_currentLanguage ? L"Om" : L"About";
 
         MENUITEMINFOW mii = { sizeof(MENUITEMINFOW) };
         mii.fMask = MIIM_ID | MIIM_STRING | MIIM_FTYPE;
         mii.fType = MFT_OWNERDRAW;
 
-        mii.wID = 1001; mii.dwTypeData = (LPWSTR)MENU_TEXT_SUMMARY;
+        mii.wID = 1001; mii.dwTypeData = (LPWSTR)lblSummary;
         InsertMenuItemW(hMainMenu, 0, TRUE, &mii);
 
-        mii.wID = 1002; mii.dwTypeData = (LPWSTR)MENU_TEXT_CPUINFO;
+        mii.wID = 1002; mii.dwTypeData = (LPWSTR)lblCpu;
         InsertMenuItemW(hMainMenu, 1, TRUE, &mii);
+
+        // Language submenu (insert after CPU item)
+        HMENU hLangMenu = CreateMenu();
+        AppendMenuW(hLangMenu, MF_STRING, ID_LANG_EN, g_currentLanguage ? L"Engelsk" : L"English");
+        AppendMenuW(hLangMenu, MF_STRING, ID_LANG_NO, L"Norsk");
+        InsertMenuW(hMainMenu, 2, MF_BYPOSITION | MF_POPUP, (UINT_PTR)hLangMenu, g_currentLanguage ? L"Språk" : L"Language");
+        CheckMenuRadioItem(hLangMenu, ID_LANG_EN, ID_LANG_NO, (g_currentLanguage==1)?ID_LANG_NO:ID_LANG_EN, MF_BYCOMMAND);
 
         MENUITEMINFOW sep = { sizeof(MENUITEMINFOW) };
         sep.fMask = MIIM_FTYPE;
@@ -543,11 +603,11 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         MENUITEMINFOW miiHelp = { sizeof(MENUITEMINFOW) };
         miiHelp.fMask = MIIM_ID | MIIM_STRING | MIIM_FTYPE;
         miiHelp.fType = MFT_OWNERDRAW;
-        miiHelp.wID = 2001; miiHelp.dwTypeData = (LPWSTR)MENU_TEXT_ABOUT;
+        miiHelp.wID = 2001; miiHelp.dwTypeData = (LPWSTR)lblAbout;
         InsertMenuItemW(hHelpMenu, 0, TRUE, &miiHelp);
 
-        AppendMenuW(hMenu, MF_POPUP, (UINT_PTR)hMainMenu, L"Menu");
-        AppendMenuW(hMenu, MF_POPUP, (UINT_PTR)hHelpMenu, L"Help");
+        AppendMenuW(hMenu, MF_POPUP, (UINT_PTR)hMainMenu, (LPWSTR)lblMenuTop);
+        AppendMenuW(hMenu, MF_POPUP, (UINT_PTR)hHelpMenu, (LPWSTR)lblHelp);
         SetMenu(hwnd, hMenu);
 
         const wchar_t* summaryText = L"Summary:\r\nThis is the summary page. Add your summary content here.";
@@ -657,7 +717,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
     }
     case WM_MEASUREITEM: {
         LPMEASUREITEMSTRUCT mis = (LPMEASUREITEMSTRUCT)lParam;
-        if (mis->itemID == -1) {
+        if ((UINT)mis->itemID == (UINT)-1) {
             mis->itemHeight = 8;
             mis->itemWidth = 220;
         } else {
@@ -670,12 +730,12 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         LPDRAWITEMSTRUCT dis = (LPDRAWITEMSTRUCT)lParam;
         if (dis->CtlType == ODT_MENU) {
             HICON icon = nullptr;
-            switch (dis->itemID) {
+            switch ((UINT)dis->itemID) {
                 case 1001: icon = hSummaryIcon; break;
                 case 1002: icon = hCpuIcon; break;
                 case 1003: icon = hExitIcon; break;
                 case 2001: icon = hAboutIconImg; break;
-                case -1: icon = nullptr; break;
+                case (UINT)-1: icon = nullptr; break;
                 default: icon = nullptr; break;
             }
             DrawMenuItemWithIcon((HMENU)wParam, dis, icon);
@@ -743,6 +803,15 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         // Immediately update the text
         SetWindowTextW(hCpuInfoEdit, GetCpuInfoText().c_str());
         break;
+
+        case ID_LANG_EN:
+            WriteLanguageSetting(0);
+            MessageBoxW(hwnd, L"Language set to English. Restart the app to apply the change.", APP_WINDOW_TITLE, MB_OK | MB_ICONINFORMATION);
+            break;
+        case ID_LANG_NO:
+            WriteLanguageSetting(1);
+            MessageBoxW(hwnd, L"Language set to Norsk. Restart the app to apply the change.", APP_WINDOW_TITLE, MB_OK | MB_ICONINFORMATION);
+            break;
 
 
         case 1003: // Exit
@@ -1060,4 +1129,9 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
     }
     DestroyAcceleratorTable(hAccel);
     return 0;
+}
+// Provide WinMain wrapper for linkers expecting ANSI entrypoint
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
+    LPWSTR cmd = GetCommandLineW();
+    return wWinMain(hInstance, hPrevInstance, cmd, nCmdShow);
 }
