@@ -494,4 +494,5 @@ CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_vector.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/vector.tcc \
+ C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\include/storagepage.h \
  C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\include/resource.h

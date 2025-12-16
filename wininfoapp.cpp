@@ -13,6 +13,7 @@
 #include <windows.h>
 
 #include "include/cpuinfo.h"
+#include "include/storagepage.h"
 #include "include/resource.h"
 
 using namespace Gdiplus;
@@ -284,6 +285,7 @@ const wchar_t* MENU_TEXT_SUMMARY = L"Summary";
 const wchar_t* MENU_TEXT_CPUINFO = L"CPU Info";
 const wchar_t* MENU_TEXT_EXIT    = L"Exit";
 const wchar_t* MENU_TEXT_HELP    = L"Help";
+const wchar_t* MENU_TEXT_STORAGE = L"Storage";
 const wchar_t* MENU_TEXT_ABOUT   = L"About";
 
 // --- Icon loader ---
@@ -484,6 +486,7 @@ void DrawMenuItemWithIcon(HMENU hMenu, LPDRAWITEMSTRUCT dis, HICON hIcon) {
     switch (dis->itemID) {
         case 1001: text = MENU_TEXT_SUMMARY; break;
         case 1002: text = MENU_TEXT_CPUINFO; break;
+        case 1004: text = MENU_TEXT_STORAGE; break;
         case 1003: text = MENU_TEXT_EXIT; break;
         case 2001: text = MENU_TEXT_ABOUT; break;
         default: text = L""; break;
@@ -529,6 +532,8 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
     static HICON hCpuIcon = nullptr;
     static HICON hExitIcon = nullptr;
     static HICON hAboutIconImg = nullptr;
+    static HICON hStorageIcon = nullptr;
+    static HWND hStoragePage = nullptr;
     static bool sizingAboutManually = false;
 
     
@@ -559,6 +564,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         hSummaryIcon = (HICON)LoadImageW(NULL, IDI_INFORMATION, IMAGE_ICON, 32, 32, LR_SHARED);
         hCpuIcon = (HICON)LoadImageW(NULL, IDI_SHIELD, IMAGE_ICON, 32, 32, LR_SHARED);
         hExitIcon = (HICON)LoadImageW(NULL, IDI_ERROR, IMAGE_ICON, 32, 32, LR_SHARED);
+        hStorageIcon = (HICON)LoadImageW(NULL, IDI_APPLICATION, IMAGE_ICON, 32, 32, LR_SHARED);
         hAboutIconImg = LoadAppIcon(70);
         hAboutBitmap = LoadAboutImage();
 
@@ -583,22 +589,27 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         mii.wID = 1002; mii.dwTypeData = (LPWSTR)lblCpu;
         InsertMenuItemW(hMainMenu, 1, TRUE, &mii);
 
-        // Language submenu (insert after CPU item)
+        // Storage menu item (insert after CPU)
+        mii.wID = 1004; mii.dwTypeData = (LPWSTR)lblStorage;
+        mii.fType = MFT_OWNERDRAW;
+        InsertMenuItemW(hMainMenu, 2, TRUE, &mii);
+
+        // Language submenu (insert after Storage)
         HMENU hLangMenu = CreateMenu();
         AppendMenuW(hLangMenu, MF_STRING, ID_LANG_EN, g_currentLanguage ? L"Engelsk" : L"English");
         AppendMenuW(hLangMenu, MF_STRING, ID_LANG_NO, L"Norsk");
-        InsertMenuW(hMainMenu, 2, MF_BYPOSITION | MF_POPUP, (UINT_PTR)hLangMenu, g_currentLanguage ? L"Språk" : L"Language");
+        InsertMenuW(hMainMenu, 3, MF_BYPOSITION | MF_POPUP, (UINT_PTR)hLangMenu, g_currentLanguage ? L"Språk" : L"Language");
         CheckMenuRadioItem(hLangMenu, ID_LANG_EN, ID_LANG_NO, (g_currentLanguage==1)?ID_LANG_NO:ID_LANG_EN, MF_BYCOMMAND);
 
         MENUITEMINFOW sep = { sizeof(MENUITEMINFOW) };
         sep.fMask = MIIM_FTYPE;
         sep.fType = MFT_SEPARATOR;
         sep.wID = -1;
-        InsertMenuItemW(hMainMenu, 2, TRUE, &sep);
+        InsertMenuItemW(hMainMenu, 4, TRUE, &sep);
 
         mii.wID = 1003; mii.dwTypeData = (LPWSTR)MENU_TEXT_EXIT;
         mii.fType = MFT_OWNERDRAW;
-        InsertMenuItemW(hMainMenu, 3, TRUE, &mii);
+        InsertMenuItemW(hMainMenu, 5, TRUE, &mii);
 
         MENUITEMINFOW miiHelp = { sizeof(MENUITEMINFOW) };
         miiHelp.fMask = MIIM_ID | MIIM_STRING | MIIM_FTYPE;
@@ -733,6 +744,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
             switch ((UINT)dis->itemID) {
                 case 1001: icon = hSummaryIcon; break;
                 case 1002: icon = hCpuIcon; break;
+                case 1004: icon = hStorageIcon; break;
                 case 1003: icon = hExitIcon; break;
                 case 2001: icon = hAboutIconImg; break;
                 case (UINT)-1: icon = nullptr; break;
@@ -803,6 +815,34 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         // Immediately update the text
         SetWindowTextW(hCpuInfoEdit, GetCpuInfoText().c_str());
         break;
+
+        case 1004: // Storage
+            currentPage = 3;
+            ShowWindow(hSummaryEdit, SW_HIDE);
+            ShowWindow(hCpuInfoEdit, SW_HIDE);
+            ShowWindow(hAboutIcon, SW_HIDE);
+            ShowWindow(hAboutImage, SW_HIDE);
+            ShowWindow(hAboutStatic1, SW_HIDE);
+            ShowWindow(hAboutStatic2, SW_HIDE);
+            ShowWindow(hAboutInfoLine, SW_HIDE);
+            ShowWindow(hAboutStatic3, SW_HIDE);
+            ShowWindow(hVersionValue, SW_HIDE);
+            ShowWindow(hContactLabel, SW_HIDE);
+            ShowWindow(hContactBtn, SW_HIDE);
+            ShowWindow(hAboutStatic4, SW_HIDE);
+            ShowWindow(hAboutStatic5, SW_HIDE);
+            ShowWindow(hLicenseBtn, SW_HIDE);
+            ShowWindow(hSourceBtn, SW_HIDE);
+            if (!hStoragePage) {
+                hStoragePage = CreateStoragePage(hwnd, GetModuleHandle(NULL));
+            }
+            if (hStoragePage) {
+                RECT rc; GetClientRect(hwnd, &rc);
+                MoveWindow(hStoragePage, 10, 10, rc.right - rc.left - 20, rc.bottom - rc.top - 20, TRUE);
+                ShowWindow(hStoragePage, SW_SHOW);
+            }
+            KillTimer(hwnd, 2);
+            break;
 
         case ID_LANG_EN:
             WriteLanguageSetting(0);
@@ -947,6 +987,9 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         SetWindowTextW(hwnd, APP_WINDOW_TITLE);
         MoveWindow(hSummaryEdit, ScaleByDPI(10, dpi), ScaleByDPI(10, dpi), curW - ScaleByDPI(20, dpi), curH - ScaleByDPI(20, dpi), TRUE);
         MoveWindow(hCpuInfoEdit, ScaleByDPI(10, dpi), ScaleByDPI(10, dpi), curW - ScaleByDPI(20, dpi), curH - ScaleByDPI(20, dpi), TRUE);
+        if (hStoragePage) {
+            MoveWindow(hStoragePage, ScaleByDPI(10, dpi), ScaleByDPI(10, dpi), curW - ScaleByDPI(20, dpi), curH - ScaleByDPI(20, dpi), TRUE);
+        }
         int winW = curW, winH = curH;
         int headlineW = szHeadline.cx + ScaleByDPI(40, dpi);
         int headlineH = ScaleByDPI(32, dpi);
@@ -1028,6 +1071,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
     if (hFontLabel) DeleteObject(hFontLabel);
     if (hFontValue) DeleteObject(hFontValue);
     if (cpuInfoTimer) KillTimer(hwnd, 2);
+    if (hStoragePage) DestroyWindow(hStoragePage);
     PostQuitMessage(0);
     break;
 
