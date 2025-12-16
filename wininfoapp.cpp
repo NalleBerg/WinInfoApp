@@ -25,6 +25,7 @@ using namespace Gdiplus;
 #define ID_LANG_NO 4002
 // Language parent id (popup) for owner-draw globe
 #define ID_LANG_PARENT 4000
+// (no custom top-level menu ids)
 
 // Current language (0=en,1=no)
 static int g_currentLanguage = 0;
@@ -289,6 +290,8 @@ const wchar_t* MENU_TEXT_CPUINFO = L"CPU Info";
 const wchar_t* MENU_TEXT_EXIT    = L"Exit";
 const wchar_t* MENU_TEXT_HELP    = L"Help";
 const wchar_t* MENU_TEXT_STORAGE = L"Storage";
+
+// (menu uses system colors; no custom palette here)
 
 // runtime map of menu id -> label for owner-drawn items
 static std::unordered_map<UINT, std::wstring> g_menuLabels;
@@ -1057,13 +1060,75 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
             break;
 
         case ID_LANG_EN:
-            WriteLanguageSetting(0);
-            MessageBoxW(hwnd, L"Language set to English. Restart the app to apply the change.", APP_WINDOW_TITLE, MB_OK | MB_ICONINFORMATION);
+        case ID_LANG_NO: {
+            int newLang = (LOWORD(wParam) == ID_LANG_NO) ? 1 : 0;
+            g_currentLanguage = newLang;
+            WriteLanguageSetting(newLang);
+
+            // localized labels
+            const wchar_t* lblSummary = g_currentLanguage ? L"Oppsummering" : L"Summary";
+            const wchar_t* lblCpu = g_currentLanguage ? L"CPU-informasjon" : L"CPU Info";
+            const wchar_t* lblStorage = g_currentLanguage ? L"Lagring" : L"Storage";
+            const wchar_t* lblExit = g_currentLanguage ? L"Avslutt" : L"Exit";
+            const wchar_t* lblHelp = g_currentLanguage ? L"Hjelp" : L"Help";
+            const wchar_t* lblMenuTop = g_currentLanguage ? L"Meny" : L"Menu";
+            const wchar_t* lblAbout = g_currentLanguage ? L"Om" : L"About";
+
+            // update runtime menu label map used by owner-draw
+            g_menuLabels[1001] = lblSummary;
+            g_menuLabels[1002] = lblCpu;
+            g_menuLabels[1004] = lblStorage;
+            g_menuLabels[1003] = lblExit;
+            g_menuLabels[2001] = lblAbout;
+            g_menuLabels[ID_LANG_EN] = g_currentLanguage ? L"Engelsk" : L"English";
+            g_menuLabels[ID_LANG_NO] = L"Norsk";
+            g_menuLabels[ID_LANG_PARENT] = g_currentLanguage ? L"Språk" : L"Language";
+
+            // update top-level menu titles (Menu, Help)
+            HMENU hmenubar = GetMenu(hwnd);
+            if (hmenubar) {
+                HMENU hMain = GetSubMenu(hmenubar, 0);
+                HMENU hHelp = GetSubMenu(hmenubar, 1);
+                if (hMain) ModifyMenuW(hmenubar, 0, MF_BYPOSITION | MF_POPUP, (UINT_PTR)hMain, (LPWSTR)lblMenuTop);
+                if (hHelp) ModifyMenuW(hmenubar, 1, MF_BYPOSITION | MF_POPUP, (UINT_PTR)hHelp, (LPWSTR)lblHelp);
+
+                // find the Language submenu attached to the main menu and update its item texts and radio state
+                if (hMain) {
+                    int count = GetMenuItemCount(hMain);
+                    for (int i = 0; i < count; ++i) {
+                        UINT id = GetMenuItemID(hMain, i);
+                        if (id == ID_LANG_PARENT) {
+                            HMENU hLangMenu = GetSubMenu(hMain, i);
+                            if (hLangMenu) {
+                                // modify submenu item labels by command id
+                                ModifyMenuW(hLangMenu, ID_LANG_EN, MF_BYCOMMAND | MF_STRING, ID_LANG_EN, (LPWSTR)(g_currentLanguage ? L"Engelsk" : L"English"));
+                                ModifyMenuW(hLangMenu, ID_LANG_NO, MF_BYCOMMAND | MF_STRING, ID_LANG_NO, (LPWSTR)L"Norsk");
+                            }
+                            // also update the parent popup label
+                            ModifyMenuW(hMain, ID_LANG_PARENT, MF_BYCOMMAND | MF_POPUP, (UINT_PTR)hLangMenu, (LPWSTR)(g_currentLanguage ? L"Språk" : L"Language"));
+                            break;
+                        }
+                    }
+                    // update language radio selection in the Language submenu
+                    CheckMenuRadioItem(hMain, ID_LANG_EN, ID_LANG_NO, (g_currentLanguage==1)?ID_LANG_NO:ID_LANG_EN, MF_BYCOMMAND);
+                }
+
+                DrawMenuBar(hwnd);
+            }
+
+            // Update visible UI texts in this main window
+            if (hAboutStatic1) SetWindowTextW(hAboutStatic1, (std::wstring(APP_BASE_TITLE) + L" - " + std::wstring(lblAbout)).c_str());
+            if (hAboutStatic2) SetWindowTextW(hAboutStatic2, L"Copyleft 2025 Nalle Berg");
+            if (hAboutInfoLine) SetWindowTextW(hAboutInfoLine, g_currentLanguage ? L"Informasjon om systemet og operativsystemet." : L"Information about your PC system and Operating system.");
+            if (hContactBtn) SetWindowTextW(hContactBtn, L"prog@nalle.no");
+            if (hLicenseBtn) SetWindowTextW(hLicenseBtn, g_currentLanguage ? L"GPL V2" : L"GPL V2");
+            if (hSourceBtn) SetWindowTextW(hSourceBtn, L"GitHub");
+
+            // feedback to user
+            std::wstring okMsg = g_currentLanguage ? L"Språk endret." : L"Language changed.";
+            MessageBoxW(hwnd, okMsg.c_str(), APP_WINDOW_TITLE, MB_OK | MB_ICONINFORMATION);
             break;
-        case ID_LANG_NO:
-            WriteLanguageSetting(1);
-            MessageBoxW(hwnd, L"Language set to Norsk. Restart the app to apply the change.", APP_WINDOW_TITLE, MB_OK | MB_ICONINFORMATION);
-            break;
+        }
 
 
         case 1003: // Exit
