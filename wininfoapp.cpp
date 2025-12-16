@@ -14,6 +14,7 @@
 
 #include "include/cpuinfo.h"
 #include "include/storagepage.h"
+#include <unordered_map>
 #include "include/resource.h"
 
 using namespace Gdiplus;
@@ -22,6 +23,8 @@ using namespace Gdiplus;
 // Language IDs
 #define ID_LANG_EN 4001
 #define ID_LANG_NO 4002
+// Language parent id (popup) for owner-draw globe
+#define ID_LANG_PARENT 4000
 
 // Current language (0=en,1=no)
 static int g_currentLanguage = 0;
@@ -286,6 +289,138 @@ const wchar_t* MENU_TEXT_CPUINFO = L"CPU Info";
 const wchar_t* MENU_TEXT_EXIT    = L"Exit";
 const wchar_t* MENU_TEXT_HELP    = L"Help";
 const wchar_t* MENU_TEXT_STORAGE = L"Storage";
+
+// runtime map of menu id -> label for owner-drawn items
+static std::unordered_map<UINT, std::wstring> g_menuLabels;
+
+// Helper: create a small HICON by drawing into a DIB section
+static HICON CreateIconFromDrawing(int w, int h, void(*draw)(HDC,int,int,void*), void* ctx) {
+    HDC screen = GetDC(NULL);
+    HDC mem = CreateCompatibleDC(screen);
+    BITMAPINFO bi = {};
+    bi.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
+    bi.bmiHeader.biWidth = w;
+    bi.bmiHeader.biHeight = -h; // top-down
+    bi.bmiHeader.biPlanes = 1;
+    bi.bmiHeader.biBitCount = 32;
+    void* bits = NULL;
+    HBITMAP hbmp = CreateDIBSection(mem, &bi, DIB_RGB_COLORS, &bits, NULL, 0);
+    HBITMAP hold = (HBITMAP)SelectObject(mem, hbmp);
+    // draw with GDI
+    draw(mem, w, h, ctx);
+    // create mask (monochrome) with zeros
+    HBITMAP hmask = CreateBitmap(w, h, 1, 1, NULL);
+    ICONINFO ii = {};
+    ii.fIcon = TRUE;
+    ii.hbmColor = hbmp;
+    ii.hbmMask = hmask;
+    HICON hIcon = CreateIconIndirect(&ii);
+    // cleanup
+    SelectObject(mem, hold);
+    DeleteObject(hbmp);
+    DeleteObject(hmask);
+    DeleteDC(mem);
+    ReleaseDC(NULL, screen);
+    return hIcon;
+}
+
+// forward declaration so caller in WM_CREATE can use it
+static HICON LoadIconFromImageFile(const wchar_t* path, int w, int h);
+
+// Draw disk icon
+static void DrawDiskIcon(HDC hdc, int w, int h, void* ctx) {
+    HBRUSH b = CreateSolidBrush(RGB(200,150,40));
+    HPEN p = CreatePen(PS_SOLID, 1, RGB(80,80,80));
+    HBRUSH oldb = (HBRUSH)SelectObject(hdc, b);
+    HPEN oldp = (HPEN)SelectObject(hdc, p);
+    Ellipse(hdc, 2, 2, w-2, h-2);
+    SelectObject(hdc, oldb); SelectObject(hdc, oldp);
+    DeleteObject(b); DeleteObject(p);
+    // inner circle
+    HBRUSH b2 = CreateSolidBrush(RGB(30,30,30));
+    HBRUSH oldb2 = (HBRUSH)SelectObject(hdc, b2);
+    Ellipse(hdc, w/4, h/4, w*3/4, h*3/4);
+    SelectObject(hdc, oldb2); DeleteObject(b2);
+}
+
+// Draw globe icon (simple)
+static void DrawGlobe(HDC hdc, int w, int h, void* ctx) {
+    HBRUSH b = CreateSolidBrush(RGB(40,120,200));
+    HBRUSH oldb = (HBRUSH)SelectObject(hdc, b);
+    Ellipse(hdc, 1, 1, w-1, h-1);
+    SelectObject(hdc, oldb); DeleteObject(b);
+    HPEN pen = CreatePen(PS_SOLID, 1, RGB(200,230,255));
+    HPEN oldp = (HPEN)SelectObject(hdc, pen);
+    // simple meridians/latitudes
+    MoveToEx(hdc, w/2, 2, NULL); LineTo(hdc, w/2, h-2);
+    MoveToEx(hdc, 2, h/2, NULL); LineTo(hdc, w-2, h/2);
+    Arc(hdc, 2, h/4, w-2, h*3/4, 2, h/2, 2, h/2);
+    Arc(hdc, 2, h/8, w-2, h*7/8, 2, h/2, 2, h/2);
+    SelectObject(hdc, oldp); DeleteObject(pen);
+}
+
+// Draw simple flag: ctx = (const wchar_t*) code: "GB" or "NO"
+static void DrawFlag(HDC hdc, int w, int h, void* ctx) {
+    const wchar_t* code = (const wchar_t*)ctx;
+    if (wcscmp(code, L"NO") == 0) {
+        // red background
+        HBRUSH r = CreateSolidBrush(RGB(188,0,45));
+        RECT full = {0,0,w,h};
+        FillRect(hdc, &full, r);
+        DeleteObject(r);
+        // white cross (wider)
+        HBRUSH wbrush = CreateSolidBrush(RGB(255,255,255));
+        int white_w = std::max(1, w/6);
+        int white_h = std::max(1, h/6);
+        RECT r1 = { w/2 - white_w/2 - w/8, 0, w/2 + white_w/2 - w/8, h}; // vertical bar shifted left
+        RECT r2 = { 0, h/2 - white_h/2, w, h/2 + white_h/2 }; // horizontal
+        // Actually position like Norwegian: vertical a bit left of center
+        RECT vbar = { w/4 - white_w/2, 0, w/4 + white_w/2, h };
+        FillRect(hdc, &vbar, wbrush);
+        FillRect(hdc, &r2, wbrush);
+        DeleteObject(wbrush);
+        // blue cross (narrower) centered on white
+        HBRUSH b = CreateSolidBrush(RGB(0,32,91));
+        int blue_w = std::max(1, white_w/2);
+        int blue_h = std::max(1, white_h/2);
+        RECT vb = { w/4 - blue_w/2, 0, w/4 + blue_w/2, h };
+        RECT hb = { 0, h/2 - blue_h/2, w, h/2 + blue_h/2 };
+        FillRect(hdc, &vb, b);
+        FillRect(hdc, &hb, b);
+        DeleteObject(b);
+    } else {
+        // Union Jack approximation: blue background
+        HBRUSH blue = CreateSolidBrush(RGB(0,36,125));
+        RECT full2 = {0,0,w,h};
+        FillRect(hdc, &full2, blue);
+        DeleteObject(blue);
+        // white diagonals
+        POINT diag1[4] = { {0,h/6}, {w/6,0}, {w, h*5/6}, {w*5/6, h} };
+        POINT diag2[4] = { {w/6, h}, {0, h*5/6}, {w*5/6,0}, {w, h/6} };
+        HBRUSH white = CreateSolidBrush(RGB(255,255,255));
+        HBRUSH oldb = (HBRUSH)SelectObject(hdc, white);
+        Polygon(hdc, diag1, 4);
+        Polygon(hdc, diag2, 4);
+        SelectObject(hdc, oldb); DeleteObject(white);
+        // red diagonals (narrow)
+        HPEN redPen = CreatePen(PS_SOLID, std::max(1, w/16), RGB(200,16,46));
+        HPEN oldp = (HPEN)SelectObject(hdc, redPen);
+        MoveToEx(hdc, 0, h/6, NULL); LineTo(hdc, w/6,0);
+        MoveToEx(hdc, w/6, h, NULL); LineTo(hdc, 0, h*5/6);
+        MoveToEx(hdc, w, h/6, NULL); LineTo(hdc, w*5/6, 0);
+        MoveToEx(hdc, w*5/6, h, NULL); LineTo(hdc, w, h*5/6);
+        SelectObject(hdc, oldp); DeleteObject(redPen);
+        // central white cross then red cross
+        HBRUSH white2 = CreateSolidBrush(RGB(255,255,255));
+        RECT vc = { w/2 - w/8, 0, w/2 + w/8, h }; FillRect(hdc, &vc, white2);
+        RECT hc = { 0, h/2 - h/8, w, h/2 + h/8 }; FillRect(hdc, &hc, white2);
+        DeleteObject(white2);
+        HBRUSH red = CreateSolidBrush(RGB(200,16,46));
+        RECT vcr = { w/2 - w/24, 0, w/2 + w/24, h }; FillRect(hdc, &vcr, red);
+        RECT hcr = { 0, h/2 - h/24, w, h/2 + h/24 }; FillRect(hdc, &hcr, red);
+        DeleteObject(red);
+    }
+}
 const wchar_t* MENU_TEXT_ABOUT   = L"About";
 
 // --- Icon loader ---
@@ -482,21 +617,38 @@ void DrawMenuItemWithIcon(HMENU hMenu, LPDRAWITEMSTRUCT dis, HICON hIcon) {
     FillRect(hdc, &rc, bgBrush);
     DeleteObject(bgBrush);
 
+    // Try to read the menu string stored for this command (works for owner-draw items)
+    wchar_t tbuf[256] = {};
     const wchar_t* text = nullptr;
-    switch (dis->itemID) {
-        case 1001: text = MENU_TEXT_SUMMARY; break;
-        case 1002: text = MENU_TEXT_CPUINFO; break;
-        case 1004: text = MENU_TEXT_STORAGE; break;
-        case 1003: text = MENU_TEXT_EXIT; break;
-        case 2001: text = MENU_TEXT_ABOUT; break;
-        default: text = L""; break;
+    if (hMenu && dis->itemID != (UINT)-1) {
+        if (GetMenuStringW(hMenu, (UINT)dis->itemID, tbuf, (int)std::size(tbuf), MF_BYCOMMAND) > 0) {
+            text = tbuf;
+        }
+    }
+    if (!text) {
+        auto it = g_menuLabels.find((UINT)dis->itemID);
+        if (it != g_menuLabels.end()) text = it->second.c_str();
+    }
+    if (!text) {
+        switch (dis->itemID) {
+            case 1001: text = MENU_TEXT_SUMMARY; break;
+            case 1002: text = MENU_TEXT_CPUINFO; break;
+            case 1004: text = MENU_TEXT_STORAGE; break;
+            case 1003: text = MENU_TEXT_EXIT; break;
+            case 2001: text = MENU_TEXT_ABOUT; break;
+            default: text = L""; break;
+        }
     }
 
     int iconMargin = 6;
-    int iconSize = 20;
-    int textOffset = iconMargin + iconSize + 6;
+    int iconW = 20, iconH = 20;
+    // language flags use a non-square size to look like flags
+    if (dis->itemID == ID_LANG_EN || dis->itemID == ID_LANG_NO) {
+        iconW = 24; iconH = 14;
+    }
+    int textOffset = iconMargin + iconW + 6;
     if (hIcon) {
-        DrawIconEx(hdc, rc.left + iconMargin, rc.top + (rc.bottom - rc.top - iconSize) / 2, hIcon, iconSize, iconSize, 0, NULL, DI_NORMAL);
+        DrawIconEx(hdc, rc.left + iconMargin, rc.top + (rc.bottom - rc.top - iconH) / 2, hIcon, iconW, iconH, 0, NULL, DI_NORMAL);
     } else {
         textOffset = iconMargin;
     }
@@ -533,6 +685,9 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
     static HICON hExitIcon = nullptr;
     static HICON hAboutIconImg = nullptr;
     static HICON hStorageIcon = nullptr;
+    static HICON hLangParentIcon = nullptr;
+    static HICON hFlagEn = nullptr;
+    static HICON hFlagNo = nullptr;
     static HWND hStoragePage = nullptr;
     static bool sizingAboutManually = false;
 
@@ -564,7 +719,40 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         hSummaryIcon = (HICON)LoadImageW(NULL, IDI_INFORMATION, IMAGE_ICON, 32, 32, LR_SHARED);
         hCpuIcon = (HICON)LoadImageW(NULL, IDI_SHIELD, IMAGE_ICON, 32, 32, LR_SHARED);
         hExitIcon = (HICON)LoadImageW(NULL, IDI_ERROR, IMAGE_ICON, 32, 32, LR_SHARED);
-        hStorageIcon = (HICON)LoadImageW(NULL, IDI_APPLICATION, IMAGE_ICON, 32, 32, LR_SHARED);
+        // create disk icon and language icons (try to load GIF flags from img/)
+        hStorageIcon = CreateIconFromDrawing(20, 20, DrawDiskIcon, NULL);
+        hLangParentIcon = CreateIconFromDrawing(20, 20, DrawGlobe, NULL);
+        // prefer GIF files in img/ directory; try multiple candidate paths (exe dir, parent, relative)
+        wchar_t exePath[MAX_PATH]; GetModuleFileNameW(NULL, exePath, MAX_PATH);
+        std::wstring baseDir = exePath;
+        size_t pos = baseDir.find_last_of(L"\\/"); if (pos != std::wstring::npos) baseDir = baseDir.substr(0, pos+1);
+        std::vector<std::wstring> candidatesEn = {
+            baseDir + L"img\\uk-flag.gif",
+            baseDir + L"img\\flag-en.gif",
+            baseDir + L"..\\img\\uk-flag.gif",
+            baseDir + L"..\\img\\flag-en.gif",
+            std::wstring(L"img\\uk-flag.gif"),
+            std::wstring(L"img\\flag-en.gif")
+        };
+        std::vector<std::wstring> candidatesNo = {
+            baseDir + L"img\\no-flag.gif",
+            baseDir + L"img\\flag-no.gif",
+            baseDir + L"..\\img\\no-flag.gif",
+            baseDir + L"..\\img\\flag-no.gif",
+            std::wstring(L"img\\no-flag.gif"),
+            std::wstring(L"img\\flag-no.gif")
+        };
+        hFlagEn = NULL; hFlagNo = NULL;
+        for (auto &p : candidatesEn) {
+            hFlagEn = LoadIconFromImageFile(p.c_str(), 24, 14);
+            if (hFlagEn) break;
+        }
+        for (auto &p : candidatesNo) {
+            hFlagNo = LoadIconFromImageFile(p.c_str(), 24, 14);
+            if (hFlagNo) break;
+        }
+        if (!hFlagEn) hFlagEn = CreateIconFromDrawing(24, 14, DrawFlag, (void*)L"GB");
+        if (!hFlagNo) hFlagNo = CreateIconFromDrawing(24, 14, DrawFlag, (void*)L"NO");
         hAboutIconImg = LoadAppIcon(70);
         hAboutBitmap = LoadAboutImage();
 
@@ -585,20 +773,39 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
 
         mii.wID = 1001; mii.dwTypeData = (LPWSTR)lblSummary;
         InsertMenuItemW(hMainMenu, 0, TRUE, &mii);
+        g_menuLabels[1001] = lblSummary;
 
         mii.wID = 1002; mii.dwTypeData = (LPWSTR)lblCpu;
         InsertMenuItemW(hMainMenu, 1, TRUE, &mii);
+        g_menuLabels[1002] = lblCpu;
 
         // Storage menu item (insert after CPU)
         mii.wID = 1004; mii.dwTypeData = (LPWSTR)lblStorage;
         mii.fType = MFT_OWNERDRAW;
         InsertMenuItemW(hMainMenu, 2, TRUE, &mii);
+        g_menuLabels[1004] = lblStorage;
 
-        // Language submenu (insert after Storage)
+        // Language submenu (insert after Storage) - make owner-drawn with globe and flags
         HMENU hLangMenu = CreateMenu();
-        AppendMenuW(hLangMenu, MF_STRING, ID_LANG_EN, g_currentLanguage ? L"Engelsk" : L"English");
-        AppendMenuW(hLangMenu, MF_STRING, ID_LANG_NO, L"Norsk");
-        InsertMenuW(hMainMenu, 3, MF_BYPOSITION | MF_POPUP, (UINT_PTR)hLangMenu, g_currentLanguage ? L"Språk" : L"Language");
+        // create owner-draw submenu items for flags
+        MENUITEMINFOW mli = { sizeof(mli) };
+        mli.fMask = MIIM_ID | MIIM_STRING | MIIM_FTYPE;
+        mli.fType = MFT_OWNERDRAW;
+        mli.wID = ID_LANG_EN; mli.dwTypeData = (LPWSTR)(g_currentLanguage ? L"Engelsk" : L"English");
+        InsertMenuItemW(hLangMenu, 0, TRUE, &mli);
+        g_menuLabels[ID_LANG_EN] = (g_currentLanguage ? L"Engelsk" : L"English");
+        mli.wID = ID_LANG_NO; mli.dwTypeData = (LPWSTR)L"Norsk";
+        InsertMenuItemW(hLangMenu, 1, TRUE, &mli);
+        g_menuLabels[ID_LANG_NO] = L"Norsk";
+        // insert parent popup as owner-draw so we can draw a globe icon
+        MENUITEMINFOW parent = { sizeof(parent) };
+        parent.fMask = MIIM_SUBMENU | MIIM_STRING | MIIM_FTYPE | MIIM_ID;
+        parent.fType = MFT_OWNERDRAW;
+        parent.hSubMenu = hLangMenu;
+        parent.wID = ID_LANG_PARENT;
+        parent.dwTypeData = (LPWSTR)(g_currentLanguage ? L"Språk" : L"Language");
+        InsertMenuItemW(hMainMenu, 3, TRUE, &parent);
+        g_menuLabels[ID_LANG_PARENT] = (g_currentLanguage ? L"Språk" : L"Language");
         CheckMenuRadioItem(hLangMenu, ID_LANG_EN, ID_LANG_NO, (g_currentLanguage==1)?ID_LANG_NO:ID_LANG_EN, MF_BYCOMMAND);
 
         MENUITEMINFOW sep = { sizeof(MENUITEMINFOW) };
@@ -610,12 +817,14 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         mii.wID = 1003; mii.dwTypeData = (LPWSTR)MENU_TEXT_EXIT;
         mii.fType = MFT_OWNERDRAW;
         InsertMenuItemW(hMainMenu, 5, TRUE, &mii);
+        g_menuLabels[1003] = MENU_TEXT_EXIT;
 
         MENUITEMINFOW miiHelp = { sizeof(MENUITEMINFOW) };
         miiHelp.fMask = MIIM_ID | MIIM_STRING | MIIM_FTYPE;
         miiHelp.fType = MFT_OWNERDRAW;
         miiHelp.wID = 2001; miiHelp.dwTypeData = (LPWSTR)lblAbout;
         InsertMenuItemW(hHelpMenu, 0, TRUE, &miiHelp);
+        g_menuLabels[2001] = lblAbout;
 
         AppendMenuW(hMenu, MF_POPUP, (UINT_PTR)hMainMenu, (LPWSTR)lblMenuTop);
         AppendMenuW(hMenu, MF_POPUP, (UINT_PTR)hHelpMenu, (LPWSTR)lblHelp);
@@ -747,6 +956,9 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
                 case 1004: icon = hStorageIcon; break;
                 case 1003: icon = hExitIcon; break;
                 case 2001: icon = hAboutIconImg; break;
+                case ID_LANG_PARENT: icon = hLangParentIcon; break;
+                case ID_LANG_EN: icon = hFlagEn; break;
+                case ID_LANG_NO: icon = hFlagNo; break;
                 case (UINT)-1: icon = nullptr; break;
                 default: icon = nullptr; break;
             }
@@ -1072,6 +1284,10 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
     if (hFontValue) DeleteObject(hFontValue);
     if (cpuInfoTimer) KillTimer(hwnd, 2);
     if (hStoragePage) DestroyWindow(hStoragePage);
+    if (hStorageIcon) DestroyIcon(hStorageIcon);
+    if (hLangParentIcon) DestroyIcon(hLangParentIcon);
+    if (hFlagEn) DestroyIcon(hFlagEn);
+    if (hFlagNo) DestroyIcon(hFlagNo);
     PostQuitMessage(0);
     break;
 
@@ -1178,4 +1394,54 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
     LPWSTR cmd = GetCommandLineW();
     return wWinMain(hInstance, hPrevInstance, cmd, nCmdShow);
+}
+
+// Load an image file (GIF/PNG) with GDI+ and convert to an HICON sized w x h.
+// forward declaration
+static HICON LoadIconFromImageFile(const wchar_t* path, int w, int h);
+
+static HICON LoadIconFromImageFile(const wchar_t* path, int w, int h) {
+    using namespace Gdiplus;
+    Bitmap* bmp = Bitmap::FromFile(path);
+    if (!bmp || bmp->GetLastStatus() != Ok) {
+        delete bmp;
+        return NULL;
+    }
+    // Create a target bitmap and draw the source into it preserving aspect ratio (fit and center)
+    Bitmap* scaled = new Bitmap(w, h, PixelFormat32bppARGB);
+    Graphics g(scaled);
+    g.SetInterpolationMode(InterpolationModeHighQualityBicubic);
+    // fill transparent
+    g.Clear(Color::Transparent);
+    int srcW = (int)bmp->GetWidth();
+    int srcH = (int)bmp->GetHeight();
+    if (srcW > 0 && srcH > 0) {
+        double scale = std::min((double)w / srcW, (double)h / srcH);
+        int destW = (int)(srcW * scale + 0.5);
+        int destH = (int)(srcH * scale + 0.5);
+        int destX = (w - destW) / 2;
+        int destY = (h - destH) / 2;
+        Rect destRect(destX, destY, destW, destH);
+        g.DrawImage(bmp, destRect);
+    }
+    delete bmp;
+    bmp = nullptr;
+    HBITMAP hBmp = NULL;
+    if (scaled->GetHBITMAP(Color::Transparent, &hBmp) != Ok) {
+        delete scaled;
+        delete bmp;
+        return NULL;
+    }
+    HBITMAP hMask = CreateBitmap(w, h, 1, 1, NULL);
+    ICONINFO ii = {};
+    ii.fIcon = TRUE;
+    ii.hbmColor = hBmp;
+    ii.hbmMask = hMask;
+    HICON hIcon = CreateIconIndirect(&ii);
+    // cleanup
+    DeleteObject(hBmp);
+    DeleteObject(hMask);
+    if (scaled && scaled != bmp) delete scaled;
+    if (bmp) delete bmp;
+    return hIcon;
 }
