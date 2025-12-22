@@ -1,5 +1,5 @@
 CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj: \
- C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\wininfoapp.cpp \
+ C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\wininfoapp.cpp \
  C:/mingw64/x86_64-w64-mingw32/include/windows.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -488,13 +488,13 @@ CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_tempbuf.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_algorithm_defs.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/execution_defs.h \
- C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\include/cpuinfo.h \
+ C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\include/cpuinfo.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/vector \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_uninitialized.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_vector.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/vector.tcc \
- C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\include/storagepage.h \
+ C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\include/storagepage.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/unordered_map \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hashtable.h \
@@ -503,4 +503,4 @@ CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/enable_special_members.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/node_handle.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/erase_if.h \
- C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\include/resource.h
+ C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\include/resource.h

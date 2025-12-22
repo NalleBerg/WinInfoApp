@@ -1,5 +1,5 @@
 CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj: \
- C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\cpuinfopage.cpp \
+ C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\cpuinfopage.cpp \
  C:/mingw64/x86_64-w64-mingw32/include/windows.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -383,5 +383,5 @@ CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_algorithm_defs.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/execution_defs.h \
  C:/mingw64/x86_64-w64-mingw32/include/windowsx.h \
- C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\include/cpuinfopage.h \
- C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\include/cpuinfo.h
+ C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\include/cpuinfopage.h \
+ C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\include/cpuinfo.h

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_RC
-  "C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/appicon.rc" "C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/WinInfoApp.dir/appicon.rc.obj"
+  "C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/appicon.rc" "C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/WinInfoApp.dir/appicon.rc.obj"
   )
 
 # Preprocessor definitions for this target.
@@ -23,10 +23,10 @@ set(CMAKE_RC_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/cpuinfo.cpp" "CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj" "gcc" "CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj.d"
-  "C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/cpuinfopage.cpp" "CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj" "gcc" "CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj.d"
-  "C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/storagepage.cpp" "CMakeFiles/WinInfoApp.dir/storagepage.cpp.obj" "gcc" "CMakeFiles/WinInfoApp.dir/storagepage.cpp.obj.d"
-  "C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/wininfoapp.cpp" "CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj" "gcc" "CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj.d"
+  "C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/cpuinfo.cpp" "CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj" "gcc" "CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj.d"
+  "C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/cpuinfopage.cpp" "CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj" "gcc" "CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj.d"
+  "C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/storagepage.cpp" "CMakeFiles/WinInfoApp.dir/storagepage.cpp.obj" "gcc" "CMakeFiles/WinInfoApp.dir/storagepage.cpp.obj.d"
+  "C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/wininfoapp.cpp" "CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj" "gcc" "CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

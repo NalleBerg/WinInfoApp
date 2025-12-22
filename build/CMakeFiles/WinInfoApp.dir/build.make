@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\nalle\Documents\C++\Workspace\WinInfoApp
+CMAKE_SOURCE_DIR = C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\build
+CMAKE_BINARY_DIR = C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/WinInfoApp.dir/depend.make
@@ -72,65 +72,65 @@ CMakeFiles/WinInfoApp.dir/codegen:
 .PHONY : CMakeFiles/WinInfoApp.dir/codegen
 
 CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj: CMakeFiles/WinInfoApp.dir/flags.make
-CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj: C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/wininfoapp.cpp
+CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj: C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/wininfoapp.cpp
 CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj: CMakeFiles/WinInfoApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj -MF CMakeFiles\WinInfoApp.dir\wininfoapp.cpp.obj.d -o CMakeFiles\WinInfoApp.dir\wininfoapp.cpp.obj -c C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\wininfoapp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj"
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.obj -MF CMakeFiles\WinInfoApp.dir\wininfoapp.cpp.obj.d -o CMakeFiles\WinInfoApp.dir\wininfoapp.cpp.obj -c C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\wininfoapp.cpp
 
 CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.i"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\wininfoapp.cpp > CMakeFiles\WinInfoApp.dir\wininfoapp.cpp.i
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\wininfoapp.cpp > CMakeFiles\WinInfoApp.dir\wininfoapp.cpp.i
 
 CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/WinInfoApp.dir/wininfoapp.cpp.s"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\wininfoapp.cpp -o CMakeFiles\WinInfoApp.dir\wininfoapp.cpp.s
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\wininfoapp.cpp -o CMakeFiles\WinInfoApp.dir\wininfoapp.cpp.s
 
 CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj: CMakeFiles/WinInfoApp.dir/flags.make
-CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj: C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/cpuinfo.cpp
+CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj: C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/cpuinfo.cpp
 CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj: CMakeFiles/WinInfoApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj -MF CMakeFiles\WinInfoApp.dir\cpuinfo.cpp.obj.d -o CMakeFiles\WinInfoApp.dir\cpuinfo.cpp.obj -c C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\cpuinfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj"
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj -MF CMakeFiles\WinInfoApp.dir\cpuinfo.cpp.obj.d -o CMakeFiles\WinInfoApp.dir\cpuinfo.cpp.obj -c C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\cpuinfo.cpp
 
 CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.i"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\cpuinfo.cpp > CMakeFiles\WinInfoApp.dir\cpuinfo.cpp.i
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\cpuinfo.cpp > CMakeFiles\WinInfoApp.dir\cpuinfo.cpp.i
 
 CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.s"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\cpuinfo.cpp -o CMakeFiles\WinInfoApp.dir\cpuinfo.cpp.s
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\cpuinfo.cpp -o CMakeFiles\WinInfoApp.dir\cpuinfo.cpp.s
 
 CMakeFiles/WinInfoApp.dir/storagepage.cpp.obj: CMakeFiles/WinInfoApp.dir/flags.make
-CMakeFiles/WinInfoApp.dir/storagepage.cpp.obj: C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/storagepage.cpp
+CMakeFiles/WinInfoApp.dir/storagepage.cpp.obj: C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/storagepage.cpp
 CMakeFiles/WinInfoApp.dir/storagepage.cpp.obj: CMakeFiles/WinInfoApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/WinInfoApp.dir/storagepage.cpp.obj"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WinInfoApp.dir/storagepage.cpp.obj -MF CMakeFiles\WinInfoApp.dir\storagepage.cpp.obj.d -o CMakeFiles\WinInfoApp.dir\storagepage.cpp.obj -c C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\storagepage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/WinInfoApp.dir/storagepage.cpp.obj"
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WinInfoApp.dir/storagepage.cpp.obj -MF CMakeFiles\WinInfoApp.dir\storagepage.cpp.obj.d -o CMakeFiles\WinInfoApp.dir\storagepage.cpp.obj -c C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\storagepage.cpp
 
 CMakeFiles/WinInfoApp.dir/storagepage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/WinInfoApp.dir/storagepage.cpp.i"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\storagepage.cpp > CMakeFiles\WinInfoApp.dir\storagepage.cpp.i
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\storagepage.cpp > CMakeFiles\WinInfoApp.dir\storagepage.cpp.i
 
 CMakeFiles/WinInfoApp.dir/storagepage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/WinInfoApp.dir/storagepage.cpp.s"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\storagepage.cpp -o CMakeFiles\WinInfoApp.dir\storagepage.cpp.s
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\storagepage.cpp -o CMakeFiles\WinInfoApp.dir\storagepage.cpp.s
 
 CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj: CMakeFiles/WinInfoApp.dir/flags.make
-CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj: C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/cpuinfopage.cpp
+CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj: C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/cpuinfopage.cpp
 CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj: CMakeFiles/WinInfoApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj -MF CMakeFiles\WinInfoApp.dir\cpuinfopage.cpp.obj.d -o CMakeFiles\WinInfoApp.dir\cpuinfopage.cpp.obj -c C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\cpuinfopage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj"
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.obj -MF CMakeFiles\WinInfoApp.dir\cpuinfopage.cpp.obj.d -o CMakeFiles\WinInfoApp.dir\cpuinfopage.cpp.obj -c C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\cpuinfopage.cpp
 
 CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.i"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\cpuinfopage.cpp > CMakeFiles\WinInfoApp.dir\cpuinfopage.cpp.i
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\cpuinfopage.cpp > CMakeFiles\WinInfoApp.dir\cpuinfopage.cpp.i
 
 CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/WinInfoApp.dir/cpuinfopage.cpp.s"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\cpuinfopage.cpp -o CMakeFiles\WinInfoApp.dir\cpuinfopage.cpp.s
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\cpuinfopage.cpp -o CMakeFiles\WinInfoApp.dir\cpuinfopage.cpp.s
 
 CMakeFiles/WinInfoApp.dir/appicon.rc.obj: CMakeFiles/WinInfoApp.dir/flags.make
-CMakeFiles/WinInfoApp.dir/appicon.rc.obj: C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/appicon.rc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building RC object CMakeFiles/WinInfoApp.dir/appicon.rc.obj"
-	C:\mingw64\bin\windres.exe -O coff $(RC_DEFINES) $(RC_INCLUDES) $(RC_FLAGS) C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\appicon.rc CMakeFiles\WinInfoApp.dir\appicon.rc.obj
+CMakeFiles/WinInfoApp.dir/appicon.rc.obj: C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/appicon.rc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building RC object CMakeFiles/WinInfoApp.dir/appicon.rc.obj"
+	C:\mingw64\bin\windres.exe -O coff $(RC_DEFINES) $(RC_INCLUDES) $(RC_FLAGS) C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\appicon.rc CMakeFiles\WinInfoApp.dir\appicon.rc.obj
 
 # Object files for target WinInfoApp
 WinInfoApp_OBJECTS = \
@@ -152,7 +152,7 @@ WinInfoApp.exe: CMakeFiles/WinInfoApp.dir/build.make
 WinInfoApp.exe: CMakeFiles/WinInfoApp.dir/linkLibs.rsp
 WinInfoApp.exe: CMakeFiles/WinInfoApp.dir/objects1.rsp
 WinInfoApp.exe: CMakeFiles/WinInfoApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable WinInfoApp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable WinInfoApp.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\WinInfoApp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -164,6 +164,6 @@ CMakeFiles/WinInfoApp.dir/clean:
 .PHONY : CMakeFiles/WinInfoApp.dir/clean
 
 CMakeFiles/WinInfoApp.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\nalle\Documents\C++\Workspace\WinInfoApp C:\Users\nalle\Documents\C++\Workspace\WinInfoApp C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\build C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\build C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles\WinInfoApp.dir\DependInfo.cmake "--color=$(COLOR)" WinInfoApp
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\build C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\build C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\build\CMakeFiles\WinInfoApp.dir\DependInfo.cmake "--color=$(COLOR)" WinInfoApp
 .PHONY : CMakeFiles/WinInfoApp.dir/depend
 

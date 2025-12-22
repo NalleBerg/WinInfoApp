@@ -29,9 +29,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -56,14 +56,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
       - "/REGISTRY-NOTFOUND/bin/"
       - "c:/MinGW/bin/"
       - "/MinGW/bin/"
@@ -75,9 +68,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -103,15 +96,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -139,9 +124,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -166,14 +151,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/c++.com"
     found: "C:/mingw64/bin/c++.exe"
@@ -181,9 +159,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -209,15 +187,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -247,9 +217,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -275,15 +245,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "message-v1"
     backtrace:
@@ -304,7 +266,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is GNU, found in:
-        C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/4.2.1/CompilerIdCXX/a.exe
+        C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/4.2.1/CompilerIdCXX/a.exe
       
   -
     kind: "find-v1"
@@ -328,9 +290,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -355,14 +317,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/ar.com"
     found: "C:/mingw64/bin/ar.exe"
@@ -370,9 +325,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -398,15 +353,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -429,9 +376,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -456,14 +403,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/ranlib.com"
     found: "C:/mingw64/bin/ranlib.exe"
@@ -471,9 +411,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -499,15 +439,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -530,9 +462,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -557,14 +489,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/strip.com"
     found: "C:/mingw64/bin/strip.exe"
@@ -572,9 +497,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -600,15 +525,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -631,9 +548,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -658,14 +575,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/ld.com"
     found: "C:/mingw64/bin/ld.exe"
@@ -673,9 +583,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -701,15 +611,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -732,9 +634,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -759,14 +661,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/nm.com"
     found: "C:/mingw64/bin/nm.exe"
@@ -774,9 +669,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -802,15 +697,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -833,9 +720,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -860,14 +747,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/objdump.com"
     found: "C:/mingw64/bin/objdump.exe"
@@ -875,9 +755,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -903,15 +783,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -934,9 +806,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -961,14 +833,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/objcopy.com"
     found: "C:/mingw64/bin/objcopy.exe"
@@ -976,9 +841,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -1004,15 +869,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -1035,9 +892,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -1062,14 +919,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/readelf.com"
     found: "C:/mingw64/bin/readelf.exe"
@@ -1077,9 +927,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -1105,15 +955,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -1136,9 +978,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -1163,14 +1005,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/dlltool.com"
     found: "C:/mingw64/bin/dlltool.exe"
@@ -1178,9 +1013,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -1206,15 +1041,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -1237,9 +1064,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -1264,14 +1091,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/addr2line.com"
     found: "C:/mingw64/bin/addr2line.exe"
@@ -1279,9 +1099,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -1307,15 +1127,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -1338,9 +1150,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -1365,14 +1177,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/tapi.com"
       - "C:/mingw64/bin/tapi.exe"
@@ -1380,15 +1185,15 @@ events:
       - "C:/Program Files/PowerShell/7/tapi.com"
       - "C:/Program Files/PowerShell/7/tapi.exe"
       - "C:/Program Files/PowerShell/7/tapi"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/tapi.com"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/tapi.exe"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/tapi"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/tapi.com"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/tapi.exe"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/tapi"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/tapi.com"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/tapi.exe"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/tapi"
@@ -1461,38 +1266,17 @@ events:
       - "C:/Program Files/CMake/bin/tapi.com"
       - "C:/Program Files/CMake/bin/tapi.exe"
       - "C:/Program Files/CMake/bin/tapi"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/tapi.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/tapi.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/tapi"
-      - "C:/vcpkg/tapi.com"
-      - "C:/vcpkg/tapi.exe"
-      - "C:/vcpkg/tapi"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/tapi.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/tapi.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/tapi"
-      - "C:/Users/nalle/.dotnet/tools/tapi.com"
-      - "C:/Users/nalle/.dotnet/tools/tapi.exe"
-      - "C:/Users/nalle/.dotnet/tools/tapi"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/tapi.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/tapi.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/tapi"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/tapi.com"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/tapi.exe"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/tapi"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/tapi.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/tapi.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/tapi"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/tapi.com"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/tapi.exe"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/tapi"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/tapi.com"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/tapi.exe"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/tapi"
     found: false
     search_context:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -1518,15 +1302,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -1552,9 +1328,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -1579,14 +1355,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/gcc-ar-15.2.com"
       - "C:/mingw64/bin/gcc-ar-15.2.exe"
@@ -1594,15 +1363,15 @@ events:
       - "C:/Program Files/PowerShell/7/gcc-ar-15.2.com"
       - "C:/Program Files/PowerShell/7/gcc-ar-15.2.exe"
       - "C:/Program Files/PowerShell/7/gcc-ar-15.2"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar-15.2.com"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar-15.2.exe"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar-15.2"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar-15.2.com"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar-15.2.exe"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar-15.2"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ar-15.2.com"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ar-15.2.exe"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ar-15.2"
@@ -1675,45 +1444,24 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ar-15.2.com"
       - "C:/Program Files/CMake/bin/gcc-ar-15.2.exe"
       - "C:/Program Files/CMake/bin/gcc-ar-15.2"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2"
-      - "C:/vcpkg/gcc-ar-15.2.com"
-      - "C:/vcpkg/gcc-ar-15.2.exe"
-      - "C:/vcpkg/gcc-ar-15.2"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-15.2.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-15.2.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-15.2"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ar-15.2.com"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ar-15.2.exe"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ar-15.2"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-15.2.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-15.2.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-15.2"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.2.com"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.2.exe"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.2"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ar-15.2.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ar-15.2.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ar-15.2"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ar-15.2.com"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ar-15.2.exe"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ar-15.2"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.com"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.exe"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2"
       - "C:/mingw64/bin/gcc-ar-15.com"
       - "C:/mingw64/bin/gcc-ar-15.exe"
       - "C:/mingw64/bin/gcc-ar-15"
       - "C:/Program Files/PowerShell/7/gcc-ar-15.com"
       - "C:/Program Files/PowerShell/7/gcc-ar-15.exe"
       - "C:/Program Files/PowerShell/7/gcc-ar-15"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar-15.com"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar-15.exe"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar-15"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar-15.com"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar-15.exe"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar-15"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ar-15.com"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ar-15.exe"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ar-15"
@@ -1786,45 +1534,24 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ar-15.com"
       - "C:/Program Files/CMake/bin/gcc-ar-15.exe"
       - "C:/Program Files/CMake/bin/gcc-ar-15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ar-15"
-      - "C:/vcpkg/gcc-ar-15.com"
-      - "C:/vcpkg/gcc-ar-15.exe"
-      - "C:/vcpkg/gcc-ar-15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-15"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ar-15.com"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ar-15.exe"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ar-15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar-15"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.com"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15.exe"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar-15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ar-15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ar-15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ar-15"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ar-15.com"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ar-15.exe"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ar-15"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.com"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.exe"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ar-15"
       - "C:/mingw64/bin/gcc-ar15.com"
       - "C:/mingw64/bin/gcc-ar15.exe"
       - "C:/mingw64/bin/gcc-ar15"
       - "C:/Program Files/PowerShell/7/gcc-ar15.com"
       - "C:/Program Files/PowerShell/7/gcc-ar15.exe"
       - "C:/Program Files/PowerShell/7/gcc-ar15"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar15.com"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar15.exe"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar15"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar15.com"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar15.exe"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ar15"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ar15.com"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ar15.exe"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ar15"
@@ -1897,39 +1624,18 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ar15.com"
       - "C:/Program Files/CMake/bin/gcc-ar15.exe"
       - "C:/Program Files/CMake/bin/gcc-ar15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ar15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ar15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ar15"
-      - "C:/vcpkg/gcc-ar15.com"
-      - "C:/vcpkg/gcc-ar15.exe"
-      - "C:/vcpkg/gcc-ar15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar15"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ar15.com"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ar15.exe"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ar15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ar15"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar15.com"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar15.exe"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ar15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ar15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ar15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ar15"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ar15.com"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ar15.exe"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ar15"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ar15.com"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ar15.exe"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ar15"
       - "C:/mingw64/bin/gcc-ar.com"
     found: "C:/mingw64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -1955,15 +1661,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -1989,9 +1687,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -2016,14 +1714,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
     searched_directories:
       - "C:/mingw64/bin/gcc-ranlib-15.2.com"
       - "C:/mingw64/bin/gcc-ranlib-15.2.exe"
@@ -2031,15 +1722,15 @@ events:
       - "C:/Program Files/PowerShell/7/gcc-ranlib-15.2.com"
       - "C:/Program Files/PowerShell/7/gcc-ranlib-15.2.exe"
       - "C:/Program Files/PowerShell/7/gcc-ranlib-15.2"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib-15.2.com"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib-15.2.exe"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib-15.2"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib-15.2.com"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib-15.2.exe"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib-15.2"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ranlib-15.2.com"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ranlib-15.2.exe"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ranlib-15.2"
@@ -2112,45 +1803,24 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.com"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.exe"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.2"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2"
-      - "C:/vcpkg/gcc-ranlib-15.2.com"
-      - "C:/vcpkg/gcc-ranlib-15.2.exe"
-      - "C:/vcpkg/gcc-ranlib-15.2"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-15.2.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-15.2.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-15.2"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ranlib-15.2.com"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ranlib-15.2.exe"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ranlib-15.2"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-15.2.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-15.2.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-15.2"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.2.com"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.2.exe"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.2"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ranlib-15.2.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ranlib-15.2.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ranlib-15.2"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ranlib-15.2.com"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ranlib-15.2.exe"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ranlib-15.2"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.com"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.exe"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2"
       - "C:/mingw64/bin/gcc-ranlib-15.com"
       - "C:/mingw64/bin/gcc-ranlib-15.exe"
       - "C:/mingw64/bin/gcc-ranlib-15"
       - "C:/Program Files/PowerShell/7/gcc-ranlib-15.com"
       - "C:/Program Files/PowerShell/7/gcc-ranlib-15.exe"
       - "C:/Program Files/PowerShell/7/gcc-ranlib-15"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib-15.com"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib-15.exe"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib-15"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib-15.com"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib-15.exe"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib-15"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ranlib-15.com"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ranlib-15.exe"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ranlib-15"
@@ -2223,45 +1893,24 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.com"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15.exe"
       - "C:/Program Files/CMake/bin/gcc-ranlib-15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15"
-      - "C:/vcpkg/gcc-ranlib-15.com"
-      - "C:/vcpkg/gcc-ranlib-15.exe"
-      - "C:/vcpkg/gcc-ranlib-15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-15"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ranlib-15.com"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ranlib-15.exe"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ranlib-15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib-15"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.com"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15.exe"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib-15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ranlib-15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ranlib-15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ranlib-15"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ranlib-15.com"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ranlib-15.exe"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ranlib-15"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.com"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.exe"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15"
       - "C:/mingw64/bin/gcc-ranlib15.com"
       - "C:/mingw64/bin/gcc-ranlib15.exe"
       - "C:/mingw64/bin/gcc-ranlib15"
       - "C:/Program Files/PowerShell/7/gcc-ranlib15.com"
       - "C:/Program Files/PowerShell/7/gcc-ranlib15.exe"
       - "C:/Program Files/PowerShell/7/gcc-ranlib15"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib15.com"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib15.exe"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib15"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15.com"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15.exe"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15.com"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15.exe"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib15.com"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib15.exe"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/gcc-ranlib15"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ranlib15.com"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ranlib15.exe"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/gcc-ranlib15"
@@ -2334,39 +1983,18 @@ events:
       - "C:/Program Files/CMake/bin/gcc-ranlib15.com"
       - "C:/Program Files/CMake/bin/gcc-ranlib15.exe"
       - "C:/Program Files/CMake/bin/gcc-ranlib15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15"
-      - "C:/vcpkg/gcc-ranlib15.com"
-      - "C:/vcpkg/gcc-ranlib15.exe"
-      - "C:/vcpkg/gcc-ranlib15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib15"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ranlib15.com"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ranlib15.exe"
-      - "C:/Users/nalle/.dotnet/tools/gcc-ranlib15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/gcc-ranlib15"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib15.com"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib15.exe"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/gcc-ranlib15"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ranlib15.com"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ranlib15.exe"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/gcc-ranlib15"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ranlib15.com"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ranlib15.exe"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/gcc-ranlib15"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.com"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.exe"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15"
       - "C:/mingw64/bin/gcc-ranlib.com"
     found: "C:/mingw64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -2392,15 +2020,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
   -
     kind: "find-v1"
     backtrace:
@@ -2426,9 +2046,9 @@ events:
     candidate_directories:
       - "C:/mingw64/bin/"
       - "C:/Program Files/PowerShell/7/"
-      - "C:/Users/nalle/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/nalle/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/NalleBerg/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/NalleBerg/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin/"
       - "C:/Program Files/Eclipse Adoptium/jdk-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-11.0.29.7-hotspot/bin/"
       - "C:/Program Files/Eclipse Adoptium/jre-21.0.9.10-hotspot/bin/"
@@ -2453,14 +2073,7 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/vcpkg/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/.dotnet/tools/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe/"
-      - "C:/Users/nalle/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/nalle/AppData/Local/Microsoft/WinGet/Packages/Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe/edit-1.2.1-x86_64-windows/"
-      - "C:/Users/nalle/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/NalleBerg/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -2480,9 +2093,9 @@ events:
       ENV{PATH}:
         - "C:\\mingw64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
-        - "c:\\Users\\nalle\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\nalle\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\NalleBerg\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\NalleBerg\\.vscode\\extensions\\vadimcn.vscode-lldb-1.12.0\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-11.0.29.7-hotspot\\bin"
         - "C:\\Program Files\\Eclipse Adoptium\\jre-21.0.9.10-hotspot\\bin"
@@ -2508,15 +2121,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "c:\\vcpkg"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\jftuga.less_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\.dotnet\\tools"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\LibreHardwareMonitor.LibreHardwareMonitor_Microsoft.Winget.Source_8wekyb3d8bbwe"
-        - "C:\\Users\\nalle\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Users\\nalle\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Microsoft.Edit_Microsoft.Winget.Source_8wekyb3d8bbwe\\edit-1.2.1-x86_64-windows"
-        - "C:\\Users\\nalle\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\NalleBerg\\AppData\\Local\\Microsoft\\WindowsApps"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/WinInfoApp"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -2532,8 +2137,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-cu4m8c"
-      binary: "C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-cu4m8c"
+      source: "C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-31y56b"
+      binary: "C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-31y56b"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2543,13 +2148,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-cu4m8c'
+        Change Dir: 'C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-31y56b'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_5571c/fast
-        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5571c.dir\\build.make CMakeFiles/cmTC_5571c.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-cu4m8c'
-        Building CXX object CMakeFiles/cmTC_5571c.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_5571c.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_308da/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_308da.dir\\build.make CMakeFiles/cmTC_308da.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-31y56b'
+        Building CXX object CMakeFiles/cmTC_308da.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_308da.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
@@ -2557,8 +2162,8 @@ events:
         Thread model: mcf
         Supported LTO compression algorithms: zlib
         gcc version 15.2.0 (x86_64-mcf-seh-rev0, Built by MinGW-Builds project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5571c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5571c.dir\\'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -U_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_5571c.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\nalle\\AppData\\Local\\Temp\\cc63IqXt.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_308da.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_308da.dir\\'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -U_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_308da.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\NALLEB~1\\AppData\\Local\\Temp\\ccdHuWmY.s
         GNU C++17 (x86_64-mcf-seh-rev0, Built by MinGW-Builds project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.27-GMP
         
@@ -2581,14 +2186,14 @@ events:
          C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: 61de8c4d747942bd598ac96411382eff
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5571c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5571c.dir\\'
-         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_5571c.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\nalle\\AppData\\Local\\Temp\\cc63IqXt.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_308da.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_308da.dir\\'
+         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_308da.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\NALLEB~1\\AppData\\Local\\Temp\\ccdHuWmY.s
         GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5571c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5571c.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_5571c.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5571c.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_308da.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_308da.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_308da.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_308da.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -2599,16 +2204,16 @@ events:
         gcc version 15.2.0 (x86_64-mcf-seh-rev0, Built by MinGW-Builds project) 
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5571c.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_5571c.'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\nalle\\AppData\\Local\\Temp\\ccU3BHDG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll --sysroot=C:/buildroot/x86_64-1520-mcf-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_5571c.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5571c.dir/objects.a --no-whole-archive --out-implib libcmTC_5571c.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_308da.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_308da.'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\NALLEB~1\\AppData\\Local\\Temp\\cc2Ulu2h.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll --sysroot=C:/buildroot/x86_64-1520-mcf-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_308da.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_308da.dir/objects.a --no-whole-archive --out-implib libcmTC_308da.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\nalle\\AppData\\Local\\Temp\\ccU3BHDG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll --sysroot=C:/buildroot/x86_64-1520-mcf-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_5571c.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5571c.dir/objects.a --no-whole-archive --out-implib libcmTC_5571c.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\NALLEB~1\\AppData\\Local\\Temp\\cc2Ulu2h.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll --sysroot=C:/buildroot/x86_64-1520-mcf-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_308da.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_308da.dir/objects.a --no-whole-archive --out-implib libcmTC_308da.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5571c.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_5571c.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_5571c.dir/objects.a
-        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_5571c.dir/objects.a @CMakeFiles\\cmTC_5571c.dir\\objects1.rsp
-        C:\\mingw64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_5571c.dir/objects.a -Wl,--no-whole-archive -o cmTC_5571c.exe -Wl,--out-implib,libcmTC_5571c.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-cu4m8c'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_308da.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_308da.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_308da.dir/objects.a
+        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_308da.dir/objects.a @CMakeFiles\\cmTC_308da.dir\\objects1.rsp
+        C:\\mingw64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_308da.dir/objects.a -Wl,--no-whole-archive -o cmTC_308da.exe -Wl,--out-implib,libcmTC_308da.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-31y56b'
         
       exitCode: 0
   -
@@ -2647,13 +2252,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-cu4m8c']
+        ignore line: [Change Dir: 'C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-31y56b']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_5571c/fast]
-        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5571c.dir\\build.make CMakeFiles/cmTC_5571c.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/nalle/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-cu4m8c']
-        ignore line: [Building CXX object CMakeFiles/cmTC_5571c.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_5571c.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_308da/fast]
+        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_308da.dir\\build.make CMakeFiles/cmTC_308da.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/NalleBerg/Documents/C++/Workspace/WinInfoApp/build/CMakeFiles/CMakeScratch/TryCompile-31y56b']
+        ignore line: [Building CXX object CMakeFiles/cmTC_308da.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_308da.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -2661,8 +2266,8 @@ events:
         ignore line: [Thread model: mcf]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 15.2.0 (x86_64-mcf-seh-rev0  Built by MinGW-Builds project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5571c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5571c.dir\\']
-        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -U_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_5571c.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\nalle\\AppData\\Local\\Temp\\cc63IqXt.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_308da.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_308da.dir\\']
+        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -U_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_308da.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\NALLEB~1\\AppData\\Local\\Temp\\ccdHuWmY.s]
         ignore line: [GNU C++17 (x86_64-mcf-seh-rev0  Built by MinGW-Builds project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2685,8 +2290,8 @@ events:
         ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 61de8c4d747942bd598ac96411382eff]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5571c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5571c.dir\\']
-        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_5571c.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\nalle\\AppData\\Local\\Temp\\cc63IqXt.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_308da.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_308da.dir\\']
+        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_308da.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\NALLEB~1\\AppData\\Local\\Temp\\ccdHuWmY.s]
         ignore line: [GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45]
         ignore line: [COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [C:/mingw64/bin/../libexec/gcc/]
@@ -2697,9 +2302,9 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5571c.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5571c.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_5571c.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5571c.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_308da.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_308da.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_308da.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_308da.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
@@ -2717,13 +2322,13 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5571c.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_5571c.']
-        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\nalle\\AppData\\Local\\Temp\\ccU3BHDG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll --sysroot=C:/buildroot/x86_64-1520-mcf-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_5571c.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5571c.dir/objects.a --no-whole-archive --out-implib libcmTC_5571c.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_308da.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_308da.']
+        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\NALLEB~1\\AppData\\Local\\Temp\\cc2Ulu2h.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll --sysroot=C:/buildroot/x86_64-1520-mcf-seh-ucrt-rt_v13-rev0/mingw64 -m i386pep -Bdynamic -o cmTC_308da.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_308da.dir/objects.a --no-whole-archive --out-implib libcmTC_308da.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\nalle\\AppData\\Local\\Temp\\ccU3BHDG.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\NALLEB~1\\AppData\\Local\\Temp\\cc2Ulu2h.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -2752,7 +2357,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_5571c.exe] ==> ignore
+          arg [cmTC_308da.exe] ==> ignore
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -2763,10 +2368,10 @@ events:
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_5571c.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_308da.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_5571c.dll.a] ==> ignore
+          arg [libcmTC_308da.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore

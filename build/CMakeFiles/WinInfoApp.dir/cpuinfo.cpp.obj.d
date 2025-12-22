@@ -1,5 +1,5 @@
 CMakeFiles/WinInfoApp.dir/cpuinfo.cpp.obj: \
- C:\Users\nalle\Documents\C++\Workspace\WinInfoApp\cpuinfo.cpp \
+ C:\Users\NalleBerg\Documents\C++\Workspace\WinInfoApp\cpuinfo.cpp \
  C:/mingw64/x86_64-w64-mingw32/include/windows.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \

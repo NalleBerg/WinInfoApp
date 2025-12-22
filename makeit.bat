@@ -29,11 +29,25 @@ if exist build (
     rmdir /s /q build >nul 2>&1
 )
 
-rem Configure the project for MinGW-w64
-echo [INFO] Configuring with CMake generator: %CMAKE_GEN%
-cmake -S . -B build -G "%CMAKE_GEN%"
+rem Ensure CMake is available
+where cmake >nul 2>&1
+if errorlevel 1 (
+    echo [ERROR] CMake not found in PATH. Please install CMake.
+    if defined OLD_PATH set "PATH=%OLD_PATH%"
+    endlocal
+    exit /b 1
+)
+
+rem Configure the project (pass CMAKE_BUILD_TYPE for single-config generators)
+echo [INFO] Configuring with CMake generator: %CMAKE_GEN% (build type: %BUILD_TYPE%)
+if ""=="%CMAKE_GEN%" (
+    cmake -S . -B build -D CMAKE_BUILD_TYPE=%BUILD_TYPE%
+) else (
+    cmake -S . -B build -G "%CMAKE_GEN%" -D CMAKE_BUILD_TYPE=%BUILD_TYPE%
+)
 if errorlevel 1 (
     echo [ERROR] CMake configuration failed.
+    if defined OLD_PATH set "PATH=%OLD_PATH%"
     endlocal
     exit /b 1
 )
@@ -49,18 +63,16 @@ if errorlevel 1 (
     exit /b 1
 )
 
-rem If Visual Studio layout was used rename Release to wininfoapp
-if exist build\Release (
-    ren build\Release wininfoapp
+rem Locate the built executable under the build directory
+set "EXE_PATH="
+for /r "build" %%F in (WinInfoApp.exe) do (
+    set "EXE_PATH=%%~fF"
+    goto :found_exe
 )
-
-rem Determine executable path for MinGW (build\WinInfoApp.exe) or VS (build\wininfoapp\WinInfoApp.exe)
-if exist build\WinInfoApp.exe (
-    set "EXE_PATH=build\WinInfoApp.exe"
-) else if exist build\wininfoapp\WinInfoApp.exe (
-    set "EXE_PATH=build\wininfoapp\WinInfoApp.exe"
-) else (
-    echo [ERROR] Executable not found.
+:found_exe
+if "%EXE_PATH%"=="" (
+    echo [ERROR] Executable not found in build directory.
+    if defined OLD_PATH set "PATH=%OLD_PATH%"
     endlocal
     exit /b 1
 )
@@ -70,6 +82,7 @@ echo [INFO] Running %EXE_PATH%
 "%EXE_PATH%"
 if errorlevel 1 (
     echo [ERROR] Application failed to start.
+    if defined OLD_PATH set "PATH=%OLD_PATH%"
     endlocal
     exit /b 1
 )
