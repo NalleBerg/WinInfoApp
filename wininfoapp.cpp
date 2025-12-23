@@ -155,7 +155,7 @@ LRESULT CALLBACK CpuInfoPageProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPar
         lf.lfWeight = FW_NORMAL;
         hFontValue = CreateFontIndirect(&lf);
 
-        SetTimer(hWnd, 2, 250, NULL); // Timer ID must be 2 for updates
+        SetTimer(hWnd, 2, 1000, NULL); // Timer ID must be 2 for updates (1s)
         break;
     }
     
@@ -290,6 +290,7 @@ const wchar_t* MENU_TEXT_CPUINFO = L"CPU Info";
 const wchar_t* MENU_TEXT_EXIT    = L"Exit";
 const wchar_t* MENU_TEXT_HELP    = L"Help";
 const wchar_t* MENU_TEXT_STORAGE = L"Storage";
+const wchar_t* MENU_TEXT_ADVANCED = L"Advanced";
 
 // (menu uses system colors; no custom palette here)
 
@@ -672,10 +673,15 @@ HACCEL CreateAppAccelerators() {
     return CreateAcceleratorTableW(accels, 1);
 }
 
+// forward decl (ensure available before usage in MainWndProc)
+static void PopulateCpuInfoListView(HWND hList);
+
 // --- Main window proc ---
 LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     static HWND hSummaryEdit = nullptr;
     static HWND hCpuInfoEdit = nullptr;
+        static HWND hAdvancedWnd = nullptr;
+        static HWND hAdvancedList = nullptr;
     static HWND hAboutIcon = nullptr, hAboutStatic1 = nullptr, hAboutStatic2 = nullptr, hAboutStatic3 = nullptr, hVersionValue = nullptr, hContactLabel = nullptr;
     static HWND hLicenseBtn = nullptr, hSourceBtn = nullptr;
     static HWND hContactBtn = nullptr;
@@ -699,6 +705,9 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
     switch (msg) {
     case WM_CREATE: {
         InitGDIPlus();
+        // Ensure common controls (ListView) available
+        INITCOMMONCONTROLSEX icex = { sizeof(icex), ICC_LISTVIEW_CLASSES };
+        InitCommonControlsEx(&icex);
         UINT dpi = GetDpiForWindow(hwnd);
         hFont9 = CreateUIFont(9, dpi);
         hFontBold = CreateUIFont(9, dpi, FW_BOLD);
@@ -830,6 +839,8 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         g_menuLabels[2001] = lblAbout;
 
         AppendMenuW(hMenu, MF_POPUP, (UINT_PTR)hMainMenu, (LPWSTR)lblMenuTop);
+        // Insert Advanced between Menu and Help as a top-level command
+        AppendMenuW(hMenu, MF_STRING, 3501, (LPWSTR)MENU_TEXT_ADVANCED);
         AppendMenuW(hMenu, MF_POPUP, (UINT_PTR)hHelpMenu, (LPWSTR)lblHelp);
         SetMenu(hwnd, hMenu);
 
@@ -839,12 +850,14 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
             WS_CHILD | WS_VISIBLE | ES_MULTILINE | ES_READONLY | WS_VSCROLL,
             16, 16, 380, 180, hwnd, NULL, GetModuleHandle(NULL), NULL
         );
-        std::wstring cpuInfoText = GetCpuInfoText();
-        hCpuInfoEdit = CreateWindowExW(
-            0, L"EDIT", cpuInfoText.c_str(),
-            WS_CHILD | ES_MULTILINE | ES_READONLY | WS_VSCROLL,
-            16, 16, 380, 180, hwnd, NULL, GetModuleHandle(NULL), NULL
-        );
+        // Create a report ListView for CPU info
+        hCpuInfoEdit = CreateWindowExW(WS_EX_CLIENTEDGE, WC_LISTVIEWW, NULL,
+            WS_CHILD | WS_TABSTOP | WS_VISIBLE | LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_VSCROLL | WS_HSCROLL,
+            16, 16, 380, 180, hwnd, NULL, GetModuleHandle(NULL), NULL);
+        if (hCpuInfoEdit) {
+            SendMessageW(hCpuInfoEdit, LVM_SETEXTENDEDLISTVIEWSTYLE, 0, LVS_EX_FULLROWSELECT | LVS_EX_GRIDLINES);
+            PopulateCpuInfoListView(hCpuInfoEdit);
+        }
         hAboutIcon = CreateWindowExW(0, L"STATIC", NULL,
             WS_CHILD | SS_ICON, 0, 0, 84, 84, hwnd, NULL, GetModuleHandle(NULL), NULL);
         SendMessageW(hAboutIcon, STM_SETICON, (WPARAM)hAboutIconImg, 0);
@@ -877,7 +890,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
             WS_CHILD, 0, 0, 70, 24, hwnd, (HMENU)3002, GetModuleHandle(NULL), NULL);
 
         SendMessageW(hSummaryEdit, WM_SETFONT, (WPARAM)hFont9, TRUE);
-        SendMessageW(hCpuInfoEdit, WM_SETFONT, (WPARAM)hFont9, TRUE);
+        if (hCpuInfoEdit) SendMessageW(hCpuInfoEdit, WM_SETFONT, (WPARAM)hFont9, TRUE);
         SendMessageW(hAboutStatic1, WM_SETFONT, (WPARAM)hFontHeadline, TRUE);
         SendMessageW(hAboutStatic2, WM_SETFONT, (WPARAM)hFontBold, TRUE);
         SendMessageW(hAboutInfoLine, WM_SETFONT, (WPARAM)hFont9, TRUE);
@@ -892,7 +905,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         SendMessageW(hAboutImage, WM_SETFONT, (WPARAM)hFont9, TRUE);
 
         ShowWindow(hSummaryEdit, SW_SHOW);
-        ShowWindow(hCpuInfoEdit, SW_HIDE);
+        if (hCpuInfoEdit) ShowWindow(hCpuInfoEdit, SW_HIDE);
         ShowWindow(hAboutIcon, SW_HIDE);
         ShowWindow(hAboutImage, SW_HIDE);
         ShowWindow(hAboutStatic1, SW_HIDE);
@@ -973,13 +986,59 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
 
     case WM_TIMER: {
     if (wParam == 2 && currentPage == 1 && hCpuInfoEdit) {
-        SetWindowTextW(hCpuInfoEdit, GetCpuInfoText().c_str());
+        PopulateCpuInfoListView(hCpuInfoEdit);
     }
     break;
     }
 
     case WM_COMMAND: {
         switch (LOWORD(wParam)) {
+        case 3501: // Advanced
+            // Toggle/show advanced info window for current page
+            if (!hAdvancedWnd) {
+                // create a simple popup window for advanced info
+                WNDCLASSW wc = {0};
+                wc.lpfnWndProc = [](HWND h, UINT m, WPARAM w, LPARAM l)->LRESULT {
+                    switch (m) {
+                    case WM_CREATE: {
+                        RECT rc; GetClientRect(h, &rc);
+                        hAdvancedList = CreateWindowExW(WS_EX_CLIENTEDGE, WC_LISTVIEWW, NULL,
+                            WS_CHILD | WS_VISIBLE | LVS_REPORT | LVS_SINGLESEL | WS_VSCROLL | WS_HSCROLL,
+                            0,0, rc.right-rc.left, rc.bottom-rc.top, h, NULL, GetModuleHandle(NULL), NULL);
+                        if (hAdvancedList) {
+                            SendMessageW(hAdvancedList, LVM_SETEXTENDEDLISTVIEWSTYLE, 0, LVS_EX_FULLROWSELECT | LVS_EX_GRIDLINES);
+                            PopulateCpuInfoListView(hAdvancedList);
+                        }
+                        return 0;
+                    }
+                    case WM_SIZE: {
+                        if (hAdvancedList) {
+                            MoveWindow(hAdvancedList, 0,0, LOWORD(l), HIWORD(l), TRUE);
+                        }
+                        return 0;
+                    }
+                    case WM_CLOSE: {
+                        DestroyWindow(h);
+                        return 0;
+                    }
+                    case WM_DESTROY: {
+                        hAdvancedWnd = NULL;
+                        hAdvancedList = NULL;
+                        return 0;
+                    }
+                    }
+                    return DefWindowProcW(h,m,w,l);
+                };
+                wc.hInstance = GetModuleHandle(NULL);
+                wc.lpszClassName = L"AdvancedInfoClass";
+                RegisterClassW(&wc);
+                int w = 640, h = 420;
+                hAdvancedWnd = CreateWindowExW(0, L"AdvancedInfoClass", L"Advanced - CPU Info (technical)",
+                    WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, w, h, hwnd, NULL, GetModuleHandle(NULL), NULL);
+            } else {
+                SetForegroundWindow(hAdvancedWnd);
+            }
+            break;
         case 1001: // Summary
             currentPage = 0;
             ShowWindow(hSummaryEdit, SW_SHOW);
@@ -1028,7 +1087,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         // Start live update timer
         SetTimer(hwnd, 2, 1000, NULL);
         // Immediately update the text
-        SetWindowTextW(hCpuInfoEdit, GetCpuInfoText().c_str());
+        PopulateCpuInfoListView(hCpuInfoEdit);
         break;
 
         case 1004: // Storage
@@ -1387,6 +1446,9 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
     UINT dpi = GetDpiForSystem();
     int winW = ScaleByDPI(350, dpi); // Initial window size set to min
     int winH = ScaleByDPI(200, dpi); // Initial window size set to min
+    // Make app 100% wider and 100% higher (double width and height)
+    winW *= 2;
+    winH *= 2;
 
     WNDCLASSEXW wc = {};
     wc.cbSize = sizeof(WNDCLASSEXW);
@@ -1510,3 +1572,41 @@ static HICON LoadIconFromImageFile(const wchar_t* path, int w, int h) {
     if (bmp) delete bmp;
     return hIcon;
 }
+
+// Populate a report-style ListView with CPU info rows
+static void PopulateCpuInfoListView(HWND hList) {
+    if (!hList) return;
+    // Create columns only once. Subsequent refreshes keep existing columns.
+    HWND hHeader = ListView_GetHeader(hList);
+    int colCount = 0;
+    if (hHeader) colCount = Header_GetItemCount(hHeader);
+    if (colCount == 0) {
+        LVCOLUMNW col = {};
+        col.mask = LVCF_TEXT | LVCF_WIDTH | LVCF_SUBITEM;
+        col.pszText = (LPWSTR)L"Property";
+        col.cx = 220;
+        ListView_InsertColumn(hList, 0, &col);
+        col.pszText = (LPWSTR)L"Value";
+        col.cx = 440;
+        col.iSubItem = 1;
+        ListView_InsertColumn(hList, 1, &col);
+    }
+
+    // Clear previous items and repopulate rows
+    ListView_DeleteAllItems(hList);
+    auto rows = getCpuInfoRows();
+    LVITEMW item = {};
+    for (int i = 0; i < (int)rows.size(); ++i) {
+        item.mask = LVIF_TEXT;
+        item.iItem = i;
+        item.iSubItem = 0;
+        item.pszText = const_cast<LPWSTR>(rows[i].label.c_str());
+        ListView_InsertItem(hList, &item);
+        ListView_SetItemText(hList, i, 1, const_cast<LPWSTR>(rows[i].value.c_str()));
+    }
+    ListView_SetColumnWidth(hList, 0, LVSCW_AUTOSIZE_USEHEADER);
+    ListView_SetColumnWidth(hList, 1, LVSCW_AUTOSIZE_USEHEADER);
+}
+
+// forward decl for helper defined later in file
+static void PopulateCpuInfoListView(HWND hList);

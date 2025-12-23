@@ -1,0 +1,1 @@
+.\WinInfoApp\WinInfoApp.exe

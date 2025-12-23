@@ -8,32 +8,69 @@
 #pragma comment(lib, "wbemuuid.lib")
 
 // --- CPU Temperature via LibreHardwareMonitorWrapper.dll ---
-int getCpuTemperature() {
+#include <thread>
+#include <atomic>
+#include <chrono>
+
+static std::atomic<int> s_lastCpuTemp{-1};
+static std::atomic<bool> s_samplerRunning{false};
+
+static void ensureWrapperLoadedAndSampleLoop() {
     typedef double (*GetCpuTemperatureFunc)();
     static HMODULE hLib = NULL;
     static GetCpuTemperatureFunc func = NULL;
 
-    if (!hLib) {
+    auto loadWrapper = [&]() -> bool {
+        if (hLib && func) return true;
         wchar_t dllPath[MAX_PATH];
         GetModuleFileNameW(NULL, dllPath, MAX_PATH);
         std::wstring exeDir = dllPath;
         size_t pos = exeDir.find_last_of(L"\\/");
         if (pos != std::wstring::npos) exeDir = exeDir.substr(0, pos);
-        std::wstring fullPath = exeDir + L"\\libs\\LibreHardwareMonitorWrapper.dll";
-        hLib = LoadLibraryW(fullPath.c_str());
+        std::vector<std::wstring> candidates = {
+            exeDir + L"\\dll\\LibreHardwareMonitorWrapper.dll",
+            exeDir + L"\\libs\\LibreHardwareMonitorWrapper.dll",
+            exeDir + L"\\..\\libs\\LibreHardwareMonitorWrapper.dll",
+            exeDir + L"\\LibreHardwareMonitorWrapper.dll"
+        };
+        for (const auto &p : candidates) {
+            hLib = LoadLibraryW(p.c_str());
+            if (hLib) break;
+        }
         if (!hLib) {
             hLib = LoadLibraryW(L"LibreHardwareMonitorWrapper.dll");
         }
         if (hLib) {
             func = (GetCpuTemperatureFunc)GetProcAddress(hLib, "GetCpuTemperature");
         }
+        return (hLib != NULL && func != NULL);
+    };
+
+    // Polling loop: attempt to load wrapper and then sample temperature every second
+    while (s_samplerRunning.load()) {
+        if (!func) {
+            loadWrapper();
+        }
+        if (func) {
+            double t = func();
+            if (t > -50 && t < 150) s_lastCpuTemp.store((int)t);
+        }
+        std::this_thread::sleep_for(std::chrono::seconds(1));
     }
-    if (func) {
-        double temp = func();
-        if (temp > -50 && temp < 150)
-            return (int)temp;
+}
+
+int getCpuTemperature() {
+    // Start sampler thread once
+    bool expected = false;
+    if (s_samplerRunning.compare_exchange_strong(expected, true)) {
+        std::thread([](){
+            ensureWrapperLoadedAndSampleLoop();
+        }).detach();
+        // tiny delay to allow initial sample
+        std::this_thread::sleep_for(std::chrono::milliseconds(10));
     }
-    return -1;
+    int val = s_lastCpuTemp.load();
+    return val;
 }
 
 // --- Info Row Structure ---
